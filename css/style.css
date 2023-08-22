@@ -1,0 +1,606 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+body {
+    font-family: 'Gochi Hand', cursive;
+}
+
+header {
+    display: flex;
+    padding: 2% 10% 0% 10%;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gochi Hand', cursive;
+}
+
+header a {
+    text-decoration: none;
+}
+
+menu-desktop ul {
+    list-style-type: none;
+}
+
+menu-desktop li {
+    float: left;
+    margin-right: 10px;
+    padding: 0 4px;
+}
+
+.logo {
+    width: 250px;
+}
+
+.menu-desktop {
+    text-decoration: none;
+    flex-grow: 1;
+}
+
+.menu-desktop--item {
+    color: #bdbdbd;
+
+}
+
+.menu-desktop--item__active {
+    color: #333;
+
+}
+
+.header-contact {
+    text-align: -webkit-right;
+}
+
+.header-contact-button {
+    border: none;
+    background: linear-gradient(109.6deg, rgb(0, 37, 84) 11.2%, rgba(0, 37, 84, 0.32) 100.2%);
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+}
+
+main {
+    display: grid;
+    padding: 2% 10% 0% 10%;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Gochi Hand', cursive;
+}
+
+.principal-presentation h1 {
+    font-size: 2, 4vw;
+    background: -webkit-linear-gradient(#6b91c2, #001e68);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+main p {
+    font-size: 1, 5vw;
+}
+
+.principal-presentation {
+    align-self: center;
+    padding-left: 10px;
+}
+
+.principal-presentation p {
+    background: -webkit-linear-gradient(#995399, #441563);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.carousel {
+    position: none;
+}
+
+.principal-image {
+    max-width: 450px;
+    justify-self: right;
+}
+
+.carousel-item img {
+    max-width: 450px;
+    object-fit: contain;
+}
+
+.services-section {
+    display: grid;
+    gap: 1%;
+    margin: 2% 10% 0% 10%;
+    justify-content: center;
+}
+
+.card {
+    max-width: 350px;
+    font-family: 'Gochi Hand', cursive;
+}
+
+.card-img-top {
+    max-width: 300px;
+    align-self: center;
+}
+
+.card-body h5 {
+    font-family: 'Gochi Hand', cursive;
+}
+
+.card-body p {
+    font-family: 'Gochi Hand', cursive;
+    color: rgb(99, 174, 239);
+}
+
+footer {
+    display: grid;
+    place-items: center;
+    font-family: 'Gochi Hand', cursive;
+}
+
+footer ul {
+    margin: 0%;
+}
+footer li {
+    display: inline-flex;
+}
+
+footer li a {
+    padding-right: 10px;
+}
+
+.nav-footer a {
+    color: black;
+}
+
+.socials-footer a {
+    color: #2c619c;
+}
+
+/*CSS específico "Sobre nosotros"*/
+
+.principal-presentation-about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-image: linear-gradient(to right top, #9bddeb, #43c2f1, #00a3fa, #007df8, #584be1);
+    border-radius: 250px 0 250px 0;
+}
+
+.principal-presentation-about-text {
+    color: #fff;
+}
+
+.principal-presentation-about-text h1 {
+    font-size: 5vh;
+}
+
+.principal-presentation-about-text p {
+    font-size: 3vh;
+}
+
+.about-us-img {
+    max-width: 350px;
+    padding-bottom: 5%;
+}
+
+.about-us-partners-section {
+    display: grid;
+    grid-template-columns: 20% 20% 60%;
+    padding: 2% 2% 2% 2%;
+    font-family: 'Gochi Hand', cursive;
+}
+
+.partner-img img {
+    max-width: 100px;
+}
+
+.partner-aws {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+}
+
+.partner-google {
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+}
+
+.partner-microsoft {
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+}
+
+.partner-vmware {
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+}
+
+.partner-text {
+    grid-column: 3 / 3;
+    grid-row: 1 / span 2;
+}
+
+.about-us-clients-section {
+    display: grid;
+    grid-template-columns: 55% 15% 15% 15%;
+    padding: 2% 2% 2% 2%;
+    font-family: 'Gochi Hand', cursive;
+    background-image: linear-gradient(to right top, #584be1, #007df8, #00a3fa, #43c2f1, #9bddeb);
+    border-radius: 0 250px 0 250px;
+    color: white;
+}
+
+.client-img {
+    justify-self: center;
+    align-self: center;
+}
+.client-img img {
+    max-width: 100px;
+    max-height: 80px;
+}
+
+.client-text {
+    grid-column: 1 / 1;
+    grid-row: 1 / span 2;
+    padding-left: 5%;
+}
+
+.client-img client-mac {
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+}
+
+.client-img client-city {
+    grid-column: 3 / 3;
+    grid-row: 1 / 1;
+}
+
+.client-img client-pepsi {
+    grid-column: 4 / 4;
+    grid-row: 1 / 1;
+}
+
+.client-img client-wendys {
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+}
+
+.client-img client-rabobank {
+    grid-column: 3 / 3;
+    grid-row: 2 / 2;
+}
+
+.client-img client-hsbc {
+    grid-column: 4 / 4;
+    grid-row: 2 / 2;
+}
+
+/* Extra small devices (phones, 575px and down) */
+@media only screen and (max-width: 576px) {
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .header-desktop-logo-image {
+        grid-column-start: 1;
+        justify-self: start;
+    }
+
+    .logo {
+        max-width: 120px;
+    }
+
+    .menu-desktop {
+        grid-column-start: 2;
+        justify-self: self-end;
+        padding-bottom: 10px;
+        font-family: 'Gochi Hand', cursive;
+    }
+
+    .header-contact {
+        display: none;
+    }
+
+    .container-fluid a {
+        font-family: 'Gochi Hand', cursive;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+        font-family: 'Gochi Hand', cursive;
+    }
+
+    .carousel-item img {
+        max-width: 450px;
+    }
+
+    h1 {
+        font-size: 5vh;
+    }
+
+    main p {
+        font-size: 3vw;
+    }
+
+    .services-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0% 10% 5% 10%;
+    }
+
+    .services-hidden-xs {
+        display: none !important;
+    }
+
+    .card {
+        max-width: 200px;
+    }
+
+    .card-img-top {
+        max-width: 150px;
+    }
+
+    .card-title {
+        font-size: 3vw;
+    }
+
+    .card-text {
+        font-size: 2vw;
+    }
+
+    .card a {
+        font-size: 3vw;
+    }
+
+    .nav-footer {
+        font-size: 2vw;
+    }
+    
+    /*CSS específico "Sobre nosotros"*/
+
+    .principal-presentation-about {
+        flex-direction: column-reverse;
+        border-radius: 100px 0 100px 0;
+    }
+
+    .about-us-img {
+        max-width: 150px;
+        padding-bottom: 5%;
+    }
+
+    .principal-presentation-about-text h1 {
+        font-size: 3vh;
+    }
+    
+    .principal-presentation-about-text p {
+        font-size: 2vh;
+    }
+
+    .about-us-partners-section {
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: 0,5fr 1fr 1fr 1fr;
+    }
+
+    .partner-img {
+        justify-self: center;
+        align-self: center;
+    }
+
+    .partner-img img {
+        max-width: 80px;
+    }
+
+    .partner-text {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+        padding: 0% 2% 0% 2%;
+    }
+
+    .partner-aws {
+        grid-column: 1 / 1;
+        grid-row: 3 / 3;
+    }
+    
+    .partner-google {
+        grid-column: 2 / 2;
+        grid-row: 3 / 3;
+    }
+    
+    .partner-microsoft {
+        grid-column: 1 / 1;
+        grid-row: 4 / 4;
+    }
+    
+    .partner-vmware {
+        grid-column: 2 / 2;
+        grid-row: 4 / 4;
+    }
+    
+    .partner-text h1 {
+        font-size: 3vh;
+        text-align: center;
+    }
+    
+    .partner-text p {
+        font-size: 2vh;
+        margin-bottom: 0%;
+        padding: 0% 5% 0% 5%;
+    }
+
+    .client-text h1 {
+        font-size: 3vh;
+    }
+    
+    .client-text p {
+        font-size: 2vh;
+    }
+
+    .about-us-clients-section {
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(4, 25%);
+        border-radius: 0 100px 0 100px;
+    }
+
+    .client-img img {
+        max-width: 60px;
+        max-height: 40px;
+    }
+    
+    .client-text {
+        grid-column: 1 / 1;
+        grid-row: 1 / span 2;
+        padding: 0% 0% 0% 12%;
+    }
+    
+    .client-img client-mac {
+        grid-column: 2 / 2;
+        grid-row: 1 / 1;
+    }
+    
+    .client-img client-city {
+        grid-column: 2 / 2;
+        grid-row: 2 / 2;
+    }
+    
+    .client-img client-pepsi {
+        grid-column: 1 / 1;
+        grid-row: 3 / 3;
+    }
+    
+    .client-img client-wendys {
+        grid-column: 2 / 2;
+        grid-row: 3 / 3;
+    }
+    
+    .client-img client-rabobank {
+        grid-column: 1 / 1;
+        grid-row: 4 / 4;
+    }
+    
+    .client-img client-hsbc {
+        grid-column: 2 / 2;
+        grid-row: 4 / 4;
+    }
+
+    .footer-about-us {
+        padding-top: 2%;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .header-desktop-logo-image {
+        grid-column-start: 1;
+        justify-self: start;
+    }
+
+    .logo {
+        max-width: 200px;
+    }
+
+    .menu-desktop {
+        grid-column-start: 2;
+        justify-self: self-end;
+        padding-bottom: 10px;
+        font-family: 'Gochi Hand', cursive;
+    }
+
+    .header-contact {
+        display: none !important;
+    }
+
+    .services-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0% 10% 0% 10%;
+        gap: 2%;
+    }
+
+    .card {
+        max-width: 250px;
+    }
+
+    .card-img-top {
+        max-width: 150px;
+    }
+
+    /*tuve que agregar padding top porque los servicios tapaban los íconos sociales del footer,
+    problema con alguna propiedad que no logre detectar aún*/
+    footer {
+        padding-top: 5%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .header-contact {
+        display: none !important;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .header-contact {
+        display: grid !important;
+    }
+
+    .menu-desktop {
+        justify-self: left;
+    }
+
+    .hidden-nav-contact {
+        display: none !important;
+    }
+
+    .services-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .services-hidden-xl {
+        display: none !important;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .hidden-nav-contact {
+        display: none !important;
+    }
+
+    .services-section {
+        display: grid;
+        grid-template-columns: repeat(5, 20%);
+        padding: 0% 10% 0% 10%;
+        gap: 3%;
+    }
+
+    .services-hidden-xl {
+        display: grid !important;
+    }
+
+    .card-img-top {
+        justify-self: center;
+    }
+}
