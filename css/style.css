@@ -67,9 +67,8 @@ menu-desktop li {
 }
 
 main {
-    display: grid;
+    display: flex;
     padding: 2% 10% 0% 10%;
-    grid-template-columns: 1fr 1fr;
     font-family: 'Gochi Hand', cursive;
 }
 
@@ -312,13 +311,13 @@ footer li a {
     }
 
     main {
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr;
+        display: flex;
+        flex-direction: column-reverse;
         font-family: 'Gochi Hand', cursive;
     }
 
     .carousel-item img {
-        max-width: 450px;
+        max-width: 350px;
     }
 
     h1 {
