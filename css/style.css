@@ -73,14 +73,14 @@ main {
 }
 
 .principal-presentation h1 {
-    font-size: 2, 4vw;
+    font-size: 4vw;
     background: -webkit-linear-gradient(#6b91c2, #001e68);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 main p {
-    font-size: 1, 5vw;
+    font-size: 2vw;
 }
 
 .principal-presentation {
@@ -99,39 +99,48 @@ main p {
 }
 
 .principal-image {
-    max-width: 450px;
-    justify-self: right;
+    max-width: 500px;
+    align-self: center;
 }
 
 .carousel-item img {
-    max-width: 450px;
+    max-width: 500px;
     object-fit: contain;
 }
 
 .services-section {
-    display: grid;
+    display: flex;
+    flex-direction: row;
     gap: 1%;
-    margin: 2% 10% 0% 10%;
+    margin: 0% 10% 0% 10%;
     justify-content: center;
+    background-image: linear-gradient(to right top, #9bddeb, #43c2f1, #00a3fa, #007df8, #584be1);
+    border-radius: 250px 0 250px 0;
 }
 
-.card {
+.services-card {
     max-width: 350px;
     font-family: 'Gochi Hand', cursive;
+    text-align: center;
 }
 
-.card-img-top {
+.services-card-button {
+    border: none;
+    background: linear-gradient(#995399, #441563);
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    height: 30px;
+    width: 100px;
+}
+
+.services-card {
     max-width: 300px;
     align-self: center;
 }
 
-.card-body h5 {
-    font-family: 'Gochi Hand', cursive;
-}
-
-.card-body p {
-    font-family: 'Gochi Hand', cursive;
-    color: rgb(99, 174, 239);
+.services-card img {
+    max-width: 150px;
 }
 
 footer {
@@ -143,6 +152,7 @@ footer {
 footer ul {
     margin: 0%;
 }
+
 footer li {
     display: inline-flex;
 }
@@ -236,6 +246,7 @@ footer li a {
     justify-self: center;
     align-self: center;
 }
+
 .client-img img {
     max-width: 100px;
     max-height: 80px;
@@ -329,39 +340,54 @@ footer li a {
     }
 
     .services-section {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-direction: row;
         padding: 0% 10% 5% 10%;
+        border-radius: 50px 0 50px 0;
     }
 
-    .services-hidden-xs {
+    .service-automation {
         display: none !important;
     }
 
-    .card {
+    .service-bi {
+        display: none !important;
+    }
+
+    .services-card {
         max-width: 200px;
+        padding-top: 3%;
     }
 
-    .card-img-top {
-        max-width: 150px;
+    .services-card img {
+        max-width: 100px;
     }
 
-    .card-title {
+    .services-card h5 {
         font-size: 3vw;
     }
 
-    .card-text {
+    .services-card p {
         font-size: 2vw;
     }
 
-    .card a {
-        font-size: 3vw;
+    .services-card button {
+        border-radius: 30px;
+        font-size: 2.5vw;
+        max-height: 25px;
+        max-width: 80%;
+    }
+
+    /*tuve que agregar padding top porque los servicios tapaban los íconos sociales del footer,
+    problema con alguna propiedad que no logre detectar aún*/
+    footer {
+        padding: 3% 0% 0% 0%
     }
 
     .nav-footer {
         font-size: 2vw;
     }
-    
+
     /*CSS específico "Sobre nosotros"*/
 
     .principal-presentation-about {
@@ -377,14 +403,14 @@ footer li a {
     .principal-presentation-about-text h1 {
         font-size: 3vh;
     }
-    
+
     .principal-presentation-about-text p {
         font-size: 2vh;
     }
 
     .about-us-partners-section {
         grid-template-columns: repeat(2, 50%);
-        grid-template-rows: 0,5fr 1fr 1fr 1fr;
+        grid-template-rows: 0, 5fr 1fr 1fr 1fr;
     }
 
     .partner-img {
@@ -406,27 +432,27 @@ footer li a {
         grid-column: 1 / 1;
         grid-row: 3 / 3;
     }
-    
+
     .partner-google {
         grid-column: 2 / 2;
         grid-row: 3 / 3;
     }
-    
+
     .partner-microsoft {
         grid-column: 1 / 1;
         grid-row: 4 / 4;
     }
-    
+
     .partner-vmware {
         grid-column: 2 / 2;
         grid-row: 4 / 4;
     }
-    
+
     .partner-text h1 {
         font-size: 3vh;
         text-align: center;
     }
-    
+
     .partner-text p {
         font-size: 2vh;
         margin-bottom: 0%;
@@ -436,7 +462,7 @@ footer li a {
     .client-text h1 {
         font-size: 3vh;
     }
-    
+
     .client-text p {
         font-size: 2vh;
     }
@@ -451,38 +477,38 @@ footer li a {
         max-width: 60px;
         max-height: 40px;
     }
-    
+
     .client-text {
         grid-column: 1 / 1;
         grid-row: 1 / span 2;
         padding: 0% 0% 0% 12%;
     }
-    
+
     .client-img client-mac {
         grid-column: 2 / 2;
         grid-row: 1 / 1;
     }
-    
+
     .client-img client-city {
         grid-column: 2 / 2;
         grid-row: 2 / 2;
     }
-    
+
     .client-img client-pepsi {
         grid-column: 1 / 1;
         grid-row: 3 / 3;
     }
-    
+
     .client-img client-wendys {
         grid-column: 2 / 2;
         grid-row: 3 / 3;
     }
-    
+
     .client-img client-rabobank {
         grid-column: 1 / 1;
         grid-row: 4 / 4;
     }
-    
+
     .client-img client-hsbc {
         grid-column: 2 / 2;
         grid-row: 4 / 4;
@@ -522,31 +548,108 @@ footer li a {
         display: none !important;
     }
 
+    main {
+        flex-direction: column-reverse;
+    }
+
+    .carousel-item img {
+        max-width: 400px;
+    }
+
     .services-section {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        padding: 0% 10% 0% 10%;
-        gap: 2%;
+        display: flex;
+        flex-direction: row;
+        border-radius: 70px 0 70px 0;
+        padding: 0% 0% 3% 0%;
     }
 
-    .card {
-        max-width: 250px;
+    .service-automation {
+        display: none !important;
     }
 
-    .card-img-top {
-        max-width: 150px;
+    .service-bi {
+        display: none !important;
     }
 
-    /*tuve que agregar padding top porque los servicios tapaban los íconos sociales del footer,
-    problema con alguna propiedad que no logre detectar aún*/
+    .services-card {
+        max-width: 230px;
+        padding-top: 3%;
+    }
+
+    .services-card img {
+        max-width: 120px;
+    }
+
+    .services-card button {
+        max-height: 30px;
+    }
+
     footer {
-        padding-top: 5%;
+        padding-top: 3%;
     }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .header-contact {
+        display: none !important;
+    }
+
+    main {
+        flex-direction:row;
+    }
+
+    .principal-presentation {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 50%;
+    }
+
+    .carousel-container {
+        flex-direction: column;
+        flex-basis: 50%;
+        flex: 1;
+    }
+
+    .services-section {
+        display: grid;
+        grid-template-columns: repeat(4, 20%);
+        grid-template-rows: auto;
+        width: 80%;
+        padding: 1% 0% 3% 0%;
+        gap: 3%
+    }
+
+    .services-card {
+        max-width: 200px;
+    }
+
+    .service-cloud {
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+    }
+
+    .service-security {
+        grid-column: 2 / 2;
+        grid-row: 1 / 1;
+    }
+
+    .service-support {
+        grid-column: 3 / 3;
+        grid-row: 1 / 1;
+    }
+
+    .service-automation {
+        display: grid !important;
+        grid-column: 4 / 4;
+        grid-row: 1 / 1;
+    }
+
+    .service-automation img {
+        justify-self: center;
+    }
+  
+    .service-bi {
         display: none !important;
     }
 
@@ -572,14 +675,35 @@ footer li a {
         display: none !important;
     }
 
+    .principal-presentation {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 50%;
+    }
+
+    .carousel-item img {
+        max-width: 450px;
+    }
+
+    .carousel-container {
+        flex-direction: column;
+        flex-basis: 50%;
+        flex: 1;
+    }
+
+    .service-automation {
+        display: grid !important;
+    }
+
+    .service-bi {
+        display: none !important;
+    }
+
     .services-section {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .services-hidden-xl {
-        display: none !important;
-    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -588,15 +712,34 @@ footer li a {
         display: none !important;
     }
 
-    .services-section {
-        display: grid;
-        grid-template-columns: repeat(5, 20%);
-        padding: 0% 10% 0% 10%;
-        gap: 3%;
+    main h1 {
+        font-size: 3.5vh;
     }
 
-    .services-hidden-xl {
+    main p {
+        font-size: 1.5vw;
+    }
+
+    .carousel-item img {
+        max-width: 500px;
+    }
+
+    .services-section {
+        grid-template-columns: repeat(5, 20%);
+        grid-template-rows: auto;
+        width: 80%;
+        padding: 1% 0% 3% 0%;
+        column-gap: 0%;
+    }
+
+    .service-bi {
         display: grid !important;
+        grid-column: 5 / 5;
+        grid-row: 1 / 1;
+    }
+
+    .service-bi img {
+        justify-self: center;
     }
 
     .card-img-top {
