@@ -52,6 +52,19 @@ menu-desktop li {
 
 }
 
+.navbar-toggler {
+    border: none !important;
+}
+
+.navbar-toggler:hover {
+    border: none !important;
+}
+
+.navbar-toggler:focus {
+    border: none !important;
+    box-shadow: none !important;
+}
+
 .header-contact {
     text-align: -webkit-right;
 }
@@ -292,14 +305,14 @@ footer li a {
 @media only screen and (max-width: 576px) {
 
     header {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
+        display: flex;
     }
 
-    .header-desktop-logo-image {
-        grid-column-start: 1;
-        justify-self: start;
+    .container-fluid {
+        display: flex;
+        flex-wrap: inherit;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .logo {
@@ -307,9 +320,6 @@ footer li a {
     }
 
     .menu-desktop {
-        grid-column-start: 2;
-        justify-self: self-end;
-        padding-bottom: 10px;
         font-family: 'Gochi Hand', cursive;
     }
 
@@ -521,26 +531,14 @@ footer li a {
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
 @media only screen and (min-width: 576px) {
-    header {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-    }
-
-    .header-desktop-logo-image {
-        grid-column-start: 1;
-        justify-self: start;
-    }
 
     .logo {
         max-width: 200px;
     }
 
-    .menu-desktop {
-        grid-column-start: 2;
-        justify-self: self-end;
-        padding-bottom: 10px;
-        font-family: 'Gochi Hand', cursive;
+    .navbar-toggler-icon {
+        width: 1.8em !important;
+        height: 1.8em !important;
     }
 
     .header-contact {
@@ -627,6 +625,12 @@ footer li a {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+
+    .navbar-toggler-icon {
+        width: 2em !important;
+        height: 2em !important;
+    }
+
     .header-contact {
         display: none !important;
     }
@@ -728,17 +732,11 @@ footer li a {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     header {
-        display: grid;
-        grid-template-columns: 1fr 3fr 1fr;
-        grid-template-rows: 1fr;
+        display: flex;
     }
 
     .header-contact {
-        display: grid !important;
-    }
-
-    .menu-desktop {
-        justify-self: left;
+        display: flex !important;
     }
 
     .hidden-nav-contact {
