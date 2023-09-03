@@ -1,8 +1,6 @@
-@import "utils/_variables.scss";
-@import "utils/_mapas.scss";
-
+@charset "UTF-8";
 body {
-  font-family: $font-hand;
+  font-family: "Gochi Hand", cursive;
 }
 
 header {
@@ -10,32 +8,28 @@ header {
   padding: 2% 10% 0% 10%;
   align-items: center;
   justify-content: center;
-  font-family: $font-hand;
-  background-color: $col-honeydew;
-
-  a {
-    text-decoration: none;
-    color: $col-berkeley-blue !important;
-
-    &:hover {
-      color: $col-cerulean !important;
-    }
-  }
+  font-family: "Gochi Hand", cursive;
+  background-color: #F1FAEE;
+}
+header a {
+  text-decoration: none;
+  color: #1D3557 !important;
+}
+header a:hover {
+  color: #457B9D !important;
 }
 
 .menu-desktop {
   text-decoration: none;
   flex-grow: 1;
-
-  ul {
-    list-style-type: none;
-  }
-
-  li {
-    float: left;
-    margin-right: 10px;
-    padding: 0 4px;
-  }
+}
+.menu-desktop ul {
+  list-style-type: none;
+}
+.menu-desktop li {
+  float: left;
+  margin-right: 10px;
+  padding: 0 4px;
 }
 
 .logo {
@@ -44,33 +38,25 @@ header {
   height: auto;
 }
 
-.container-fluid {
-  .logo-img:nth-of-type(2) {
-    display: none;
-  }
-
-  &:hover .logo-img {
-    &:nth-of-type(1) {
-      display: none;
-    }
-
-    &:nth-of-type(2) {
-      display: block;
-    }
-  }
+.container-fluid .logo-img:nth-of-type(2) {
+  display: none;
+}
+.container-fluid:hover .logo-img:nth-of-type(1) {
+  display: none;
+}
+.container-fluid:hover .logo-img:nth-of-type(2) {
+  display: block;
 }
 
 .navbar-toggler {
   border: none !important;
-
-  &:hover {
-    border: none !important;
-  }
-
-  &:focus {
-    border: none !important;
-    box-shadow: none !important;
-  }
+}
+.navbar-toggler:hover {
+  border: none !important;
+}
+.navbar-toggler:focus {
+  border: none !important;
+  box-shadow: none !important;
 }
 
 .header-contact {
@@ -79,37 +65,34 @@ header {
 
 .button-type-1 {
   border: none;
-  background: $col-red-pantone;
+  background: #E63946;
   border-radius: 10px;
-  color: $col-honeydew;
+  color: #F1FAEE;
   cursor: pointer;
   height: 40px;
   width: 100px;
-
-  &:hover {
-    background-color: $col-berkeley-blue;
-  }
+}
+.button-type-1:hover {
+  background-color: #1D3557;
 }
 
 main {
   display: flex;
   padding: 2% 10% 2% 10%;
-  font-family: $font-hand;
-
-  p {
-    font-size: 2vw;
-    color: $col-cerulean;
-  }
+  font-family: "Gochi Hand", cursive;
+}
+main p {
+  font-size: 2vw;
+  color: #457B9D;
 }
 
 .principal-presentation {
   align-self: center;
   padding-left: 10px;
-
-  h1 {
-    font-size: 4vw;
-    color: $col-berkeley-blue;
-  }
+}
+.principal-presentation h1 {
+  font-size: 4vw;
+  color: #1D3557;
 }
 
 .carousel {
@@ -136,7 +119,7 @@ main {
   gap: 1%;
   margin: 0% 2% 0% 2%;
   justify-content: center;
-  background-color: $col-cerulean;
+  background-color: #457B9D;
   justify-items: center;
   place-items: center;
 }
@@ -146,31 +129,28 @@ main {
   max-width: 300px;
   height: auto;
   align-self: center;
-  font-family: $font-hand;
+  font-family: "Gochi Hand", cursive;
   text-align: center;
-  background-color: $col-honeydew;
+  background-color: #F1FAEE;
   border-radius: 10px;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
-  transition: all .3s;
+  transition: all 0.3s;
   transition-duration: 0.3s;
   transition-timing-function: ease;
   transition-delay: 0s;
   transition-property: all;
   justify-items: center;
-
-  h5 {
-    color: $col-berkeley-blue;
-  }
-
-  p {
-    color: $col-cerulean;
-  }
-
-  img {
-    width: 100%;
-    max-width: 150px;
-    height: auto;
-  }
+}
+.services-card h5 {
+  color: #1D3557;
+}
+.services-card p {
+  color: #457B9D;
+}
+.services-card img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
 }
 
 .services-card-button {
@@ -180,54 +160,46 @@ main {
 footer {
   display: grid;
   place-items: center;
-  font-family: $font-hand;
-
-  ul {
-    margin: 0%;
-  }
-
-  li {
-    display: inline-flex;
-
-    a {
-      padding-right: 10px;
-    }
-  }
-
-  p {
-    color: $col-berkeley-blue;
-  }
+  font-family: "Gochi Hand", cursive;
+}
+footer ul {
+  margin: 0%;
+}
+footer li {
+  display: inline-flex;
+}
+footer li a {
+  padding-right: 10px;
+}
+footer p {
+  color: #1D3557;
 }
 
 .nav-footer a,
 .socials-footer a {
-  color: $col-berkeley-blue;
+  color: #1D3557;
 }
 
 .nav-footer a:hover,
 .socials-footer a:hover {
-  color: $col-cerulean;
+  color: #457B9D;
 }
 
 /*CSS específico "Sobre nosotros"*/
-
 .principal-presentation-about {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: $col-berkeley-blue;
+  background-color: #1D3557;
 }
 
-.principal-presentation-about-text {
-  h1 {
-    font-size: 5vh;
-    color: $col-non-photo-blue;
-  }
-
-  p {
-    font-size: 3vh;
-    color: $col-non-photo-blue;
-  }
+.principal-presentation-about-text h1 {
+  font-size: 5vh;
+  color: #A8DADC;
+}
+.principal-presentation-about-text p {
+  font-size: 3vh;
+  color: #A8DADC;
 }
 
 .about-us-img {
@@ -241,128 +213,113 @@ footer {
   display: grid;
   grid-template-columns: 15% 15% 15% 55%;
   padding: 2% 2% 2% 2%;
-  font-family: $font-hand;
+  font-family: "Gochi Hand", cursive;
 }
 
 .partner-img {
   text-align: -webkit-center;
-  img {
-    width: 100%;
-    max-width: 100px;
-    height: auto;
-  }
+}
+.partner-img img {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
 }
 
-
-
 .partner-aws {
-  grid-column: 1 / 1;
-  grid-row: 1 / 1;
+  grid-column: 1/1;
+  grid-row: 1/1;
 }
 
 .partner-google {
-  grid-column: 2 / 2;
-  grid-row: 1 / 1;
+  grid-column: 2/2;
+  grid-row: 1/1;
 }
 
 .partner-microsoft {
-  grid-column: 3 / 3;
-  grid-row: 1 / 1;
+  grid-column: 3/3;
+  grid-row: 1/1;
 }
 
 .partner-redhat {
-  grid-column: 1 / 1;
-  grid-row: 2 / 2;
+  grid-column: 1/1;
+  grid-row: 2/2;
 }
 
 .partner-vmware {
-  grid-column: 2 / 2;
-  grid-row: 2 / 2;
+  grid-column: 2/2;
+  grid-row: 2/2;
 }
 
 .partner-servicenow {
-  grid-column: 3 / 3;
-  grid-row: 2 / 2;
+  grid-column: 3/3;
+  grid-row: 2/2;
 }
 
 .partner-text {
-  grid-column: 4 / 4;
-  grid-row: 1 / span 2;
-
-  h1,
-  p {
-    color: $col-berkeley-blue;
-  }
+  grid-column: 4/4;
+  grid-row: 1/span 2;
+}
+.partner-text h1,
+.partner-text p {
+  color: #1D3557;
 }
 
 .about-us-clients-section {
   display: grid;
   grid-template-columns: 55% 15% 15% 15%;
   padding: 2% 2% 2% 2%;
-  font-family: $font-hand;
-  background-color: $col-berkeley-blue;
+  font-family: "Gochi Hand", cursive;
+  background-color: #1D3557;
 }
 
-.client-text {
-
-  h1,
-  p {
-    color: $col-non-photo-blue;
-  }
+.client-text h1,
+.client-text p {
+  color: #A8DADC;
 }
 
 .client-img {
   justify-self: center;
   align-self: center;
-
-  img {
-    width: 100%;
-    height: 100%;
-    max-width: 100px;
-    max-height: 80px;
-  }
+}
+.client-img img {
+  width: 100%;
+  height: 100%;
+  max-width: 100px;
+  max-height: 80px;
 }
 
 .client-text {
-  grid-column: 1 / 1;
-  grid-row: 1 / span 2;
+  grid-column: 1/1;
+  grid-row: 1/span 2;
   padding-left: 5%;
 }
 
-.client-img {
-  client-mac {
-    grid-column: 2 / 2;
-    grid-row: 1 / 1;
-  }
-
-  client-city {
-    grid-column: 3 / 3;
-    grid-row: 1 / 1;
-  }
-
-  client-pepsi {
-    grid-column: 4 / 4;
-    grid-row: 1 / 1;
-  }
-
-  client-wendys {
-    grid-column: 2 / 2;
-    grid-row: 2 / 2;
-  }
-
-  client-rabobank {
-    grid-column: 3 / 3;
-    grid-row: 2 / 2;
-  }
-
-  client-hsbc {
-    grid-column: 4 / 4;
-    grid-row: 2 / 2;
-  }
+.client-img client-mac {
+  grid-column: 2/2;
+  grid-row: 1/1;
+}
+.client-img client-city {
+  grid-column: 3/3;
+  grid-row: 1/1;
+}
+.client-img client-pepsi {
+  grid-column: 4/4;
+  grid-row: 1/1;
+}
+.client-img client-wendys {
+  grid-column: 2/2;
+  grid-row: 2/2;
+}
+.client-img client-rabobank {
+  grid-column: 3/3;
+  grid-row: 2/2;
+}
+.client-img client-hsbc {
+  grid-column: 4/4;
+  grid-row: 2/2;
 }
 
 /* CSS Contact */
-
 .principal-presentation-contact {
   display: grid;
   grid-template-columns: repeat(2, 50%);
@@ -380,18 +337,17 @@ footer {
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(3, auto);
   gap: 0%;
-
-  a {
-    text-decoration: none;
-  }
+}
+.principal-contact-image a {
+  text-decoration: none;
 }
 
 .contact-img {
   width: 100%;
   max-width: 600px;
   height: auto;
-  grid-column: 1 / span 3;
-  grid-row: 1 / span 2;
+  grid-column: 1/span 3;
+  grid-row: 1/span 2;
 }
 
 .contact-link {
@@ -400,26 +356,25 @@ footer {
   height: auto;
   justify-self: flex-end;
   transition: transform 250ms, opacity 400ms;
-
-  &:hover {
-    cursor: pointer;
-    transform: scale(1.2);
-  }
+}
+.contact-link:hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 .contact-chat {
-  grid-column: 2 / 2;
-  grid-row: 3 / 3;
+  grid-column: 2/2;
+  grid-row: 3/3;
 }
 
 .contact-mail {
-  grid-column: 1 / 1;
-  grid-row: 3 / 3;
+  grid-column: 1/1;
+  grid-row: 3/3;
 }
 
 .contact-phone {
-  grid-column: 3 / 3;
-  grid-row: 3 / 3;
+  grid-column: 3/3;
+  grid-row: 3/3;
 }
 
 /* Extra small devices (phones, 575px and down) */
@@ -427,237 +382,181 @@ footer {
   header {
     display: flex;
   }
-
   .container-fluid {
     display: flex;
     flex-wrap: inherit;
     align-items: center;
     justify-content: space-between;
   }
-
   .logo {
     width: 100%;
     max-width: 120px;
     height: auto;
   }
-
   .menu-desktop {
-    font-family: $font-hand;
+    font-family: "Gochi Hand", cursive;
   }
-
   .header-contact {
     display: none;
   }
-
   .container-fluid a {
-    font-family: $font-hand;
+    font-family: "Gochi Hand", cursive;
   }
-
   main {
     display: flex;
     flex-direction: column-reverse;
-    font-family: $font-hand;
+    font-family: "Gochi Hand", cursive;
   }
-
   .carousel-item img {
     width: 100%;
     max-width: 350px;
     height: auto;
   }
-
   h1 {
     font-size: 5vh;
   }
-
   main p {
     font-size: 3vw;
   }
-
   .services-section {
     display: flex;
     flex-direction: row;
     padding: 2% 10% 2% 10%;
     justify-content: space-around;
   }
-
   .service-support,
   .service-automation,
   .service-bi {
     display: none !important;
   }
-
   .services-card {
     max-width: 180px;
     margin: 1%;
-
-    img {
-      max-width: 100px;
-    }
-
-    h5 {
-      font-size: 3vw;
-    }
-
-    p {
-      font-size: 2vw;
-    }
-
-    button {
-      border-radius: 30px;
-      font-size: 2.5vw;
-      max-height: 25px;
-      max-width: 80%;
-    }
   }
-
+  .services-card img {
+    max-width: 100px;
+  }
+  .services-card h5 {
+    font-size: 3vw;
+  }
+  .services-card p {
+    font-size: 2vw;
+  }
+  .services-card button {
+    border-radius: 30px;
+    font-size: 2.5vw;
+    max-height: 25px;
+    max-width: 80%;
+  }
   footer {
     padding: 3% 0% 0% 0%;
   }
-
   .nav-footer {
     font-size: 2vw;
   }
-
   /*CSS específico "Sobre nosotros"*/
-
   .principal-presentation-about {
     flex-direction: column-reverse;
   }
-
   .about-us-img {
     max-width: 150px;
     padding-bottom: 5%;
   }
-
-  .principal-presentation-about-text {
-    h1 {
-      font-size: 3vh;
-    }
-
-    p {
-      font-size: 2vh;
-    }
+  .principal-presentation-about-text h1 {
+    font-size: 3vh;
   }
-
+  .principal-presentation-about-text p {
+    font-size: 2vh;
+  }
   .about-us-partners-section {
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: 0, 5fr 1fr 1fr 1fr;
   }
-
   .partner-img {
     justify-self: center;
     align-self: center;
-
-    img {
-      width: 100%;
-      max-width: 80px;
-      height: auto;
-    }
   }
-
+  .partner-img img {
+    width: 100%;
+    max-width: 80px;
+    height: auto;
+  }
   .partner-text {
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 2;
+    grid-column: 1/span 2;
+    grid-row: 1/span 2;
     padding: 0% 2% 0% 2%;
   }
-
   .partner-aws {
-    grid-column: 1 / 1;
-    grid-row: 3 / 3;
+    grid-column: 1/1;
+    grid-row: 3/3;
   }
-
   .partner-google {
-    grid-column: 2 / 2;
-    grid-row: 3 / 3;
+    grid-column: 2/2;
+    grid-row: 3/3;
   }
-
   .partner-microsoft {
-    grid-column: 1 / 1;
-    grid-row: 4 / 4;
+    grid-column: 1/1;
+    grid-row: 4/4;
   }
-
   .partner-vmware {
-    grid-column: 2 / 2;
-    grid-row: 4 / 4;
+    grid-column: 2/2;
+    grid-row: 4/4;
   }
-
-  .partner-text {
-    h1 {
-      font-size: 3vh;
-      text-align: center;
-    }
-
-    p {
-      font-size: 2vh;
-      margin-bottom: 0%;
-      padding: 0% 5% 0% 5%;
-    }
+  .partner-text h1 {
+    font-size: 3vh;
+    text-align: center;
   }
-
-  .client-text {
-    h1 {
-      font-size: 3vh;
-    }
-
-    p {
-      font-size: 2vh;
-    }
+  .partner-text p {
+    font-size: 2vh;
+    margin-bottom: 0%;
+    padding: 0% 5% 0% 5%;
   }
-
+  .client-text h1 {
+    font-size: 3vh;
+  }
+  .client-text p {
+    font-size: 2vh;
+  }
   .about-us-clients-section {
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(4, 25%);
   }
-
   .client-img img {
     max-width: 60px;
     max-height: 40px;
   }
-
   .client-text {
-    grid-column: 1 / 1;
-    grid-row: 1 / span 3;
+    grid-column: 1/1;
+    grid-row: 1/span 3;
     padding: 0% 0% 0% 12%;
   }
-
-  .client-img {
-    client-mac {
-      grid-column: 2 / 2;
-      grid-row: 1 / 1;
-    }
-
-    client-city {
-      grid-column: 2 / 2;
-      grid-row: 2 / 2;
-    }
+  .client-img client-mac {
+    grid-column: 2/2;
+    grid-row: 1/1;
   }
-
+  .client-img client-city {
+    grid-column: 2/2;
+    grid-row: 2/2;
+  }
   .client-pepsi {
     display: none;
   }
-
-  .client-img {
-    client-wendys {
-      grid-column: 2 / 2;
-      grid-row: 3 / 3;
-    }
-
-    client-rabobank {
-      grid-column: 1 / 1;
-      grid-row: 4 / 4;
-    }
-
-    client-hsbc {
-      grid-column: 2 / 2;
-      grid-row: 4 / 4;
-    }
+  .client-img client-wendys {
+    grid-column: 2/2;
+    grid-row: 3/3;
   }
-
+  .client-img client-rabobank {
+    grid-column: 1/1;
+    grid-row: 4/4;
+  }
+  .client-img client-hsbc {
+    grid-column: 2/2;
+    grid-row: 4/4;
+  }
   .footer-about-us {
     padding-top: 2%;
   }
 }
-
 /* Small devices (portrait tablets and large phones, 576px and up) */
 @media only screen and (min-width: 576px) {
   .logo {
@@ -665,105 +564,85 @@ footer {
     max-width: 200px;
     height: auto;
   }
-
   .navbar-toggler-icon {
     width: 1.8em !important;
     height: 1.8em !important;
   }
-
   .header-contact {
     display: none !important;
   }
-
   main {
     flex-direction: column-reverse;
   }
-
   .carousel-item img {
     width: 100%;
     max-width: 400px;
     height: auto;
   }
-
   .services-section {
     display: flex;
     flex-direction: row;
     padding: 1% 2% 1% 2%;
   }
-
   .service-automation,
   .service-bi {
     display: none !important;
   }
-
   .services-card {
     width: 100%;
     max-width: 180px;
     height: auto;
     margin: 1%;
-
-    img {
-      width: 100%;
-      max-width: 120px;
-      height: auto;
-    }
   }
-
+  .services-card img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+  }
   /*CSS específico "Sobre nosotros"*/
-
-  .principal-presentation-about-text,
-  .partner-text,
-  .client-text {
-    h1 {
-      font-size: 3vh;
-    }
-
-    p {
-      font-size: 2vh;
-    }
+  .principal-presentation-about-text h1,
+  .partner-text h1,
+  .client-text h1 {
+    font-size: 3vh;
   }
-
+  .principal-presentation-about-text p,
+  .partner-text p,
+  .client-text p {
+    font-size: 2vh;
+  }
   .principal-presentation-about {
     flex-direction: column-reverse;
   }
-
   .about-us-clients-section {
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(4, 25%);
   }
-
   footer {
     padding-top: 3%;
   }
 }
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .navbar-toggler-icon {
     width: 2em !important;
     height: 2em !important;
   }
-
   .header-contact {
     display: none !important;
   }
-
   main {
     flex-direction: row;
   }
-
   .principal-presentation {
     flex-direction: row;
     flex-wrap: wrap;
     width: 50%;
   }
-
   .carousel-container {
     flex-direction: column;
     flex-basis: 50%;
     flex: 1;
   }
-
   .services-section {
     display: grid;
     grid-template-columns: repeat(4, 20%);
@@ -771,264 +650,200 @@ footer {
     padding: 1% 0% 1% 0%;
     gap: 1%;
   }
-
   .services-card {
     max-width: 200px;
   }
-
   .service-cloud {
-    grid-column: 1 / 1;
-    grid-row: 1 / 1;
+    grid-column: 1/1;
+    grid-row: 1/1;
   }
-
   .service-security {
-    grid-column: 2 / 2;
-    grid-row: 1 / 1;
+    grid-column: 2/2;
+    grid-row: 1/1;
   }
-
   .service-support {
     display: grid !important;
-    grid-column: 3 / 3;
-    grid-row: 1 / 1;
+    grid-column: 3/3;
+    grid-row: 1/1;
   }
-
   .service-automation {
     display: grid !important;
-    grid-column: 4 / 4;
-    grid-row: 1 / 1;
-
-    img {
-      justify-self: center;
-    }
+    grid-column: 4/4;
+    grid-row: 1/1;
   }
-
+  .service-automation img {
+    justify-self: center;
+  }
   .service-bi {
     display: none !important;
   }
-
   /*CSS específico "Sobre nosotros"*/
-
   .principal-presentation-about {
     display: flex;
     flex-direction: row;
   }
-
-  .principal-presentation-about-text {
-    h1 {
-      font-size: 3.5vh;
-    }
-
-    p {
-      font-size: 2.5vh;
-    }
+  .principal-presentation-about-text h1 {
+    font-size: 3.5vh;
   }
-
-  .partner-text {
-    h1 {
-      font-size: 3.5vh;
-      text-align: center;
-    }
-
-    p {
-      font-size: 2.5vh;
-      margin-bottom: 0%;
-      padding: 0% 5% 0% 5%;
-    }
+  .principal-presentation-about-text p {
+    font-size: 2.5vh;
   }
-
-  .client-text {
-    h1 {
-      font-size: 3.5vh;
-    }
-
-    p {
-      font-size: 2.5vh;
-    }
+  .partner-text h1 {
+    font-size: 3.5vh;
+    text-align: center;
+  }
+  .partner-text p {
+    font-size: 2.5vh;
+    margin-bottom: 0%;
+    padding: 0% 5% 0% 5%;
+  }
+  .client-text h1 {
+    font-size: 3.5vh;
+  }
+  .client-text p {
+    font-size: 2.5vh;
   }
 }
-
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   header {
     display: flex;
   }
-
   .header-contact {
     display: flex !important;
   }
-
   .hidden-nav-contact {
     display: none !important;
   }
-
   .principal-presentation {
     flex-direction: row;
     flex-wrap: wrap;
     width: 50%;
   }
-
   .carousel-item img {
     width: 100%;
     max-width: 450px;
     height: auto;
   }
-
   .carousel-container {
     flex-direction: column;
     flex-basis: 50%;
     flex: 1;
   }
-
   .service-automation {
     display: grid !important;
   }
-
   .service-bi {
     display: none !important;
   }
-
   .services-section {
     display: grid;
     grid-template-columns: repeat(4, 20%);
     grid-template-rows: auto;
     margin: 0%;
   }
-
   /*CSS específico "Sobre nosotros"*/
-
-  .principal-presentation-about-text {
-    h1 {
-      font-size: 4vh;
-    }
-
-    p {
-      font-size: 3vh;
-    }
+  .principal-presentation-about-text h1 {
+    font-size: 4vh;
   }
-
-  .partner-text {
-    h1 {
-      font-size: 4vh;
-      text-align: center;
-    }
-
-    p {
-      font-size: 3vh;
-      margin-bottom: 0%;
-      padding: 0% 5% 0% 5%;
-    }
+  .principal-presentation-about-text p {
+    font-size: 3vh;
   }
-
-  .client-text {
-    h1 {
-      font-size: 4vh;
-    }
-
-    p {
-      font-size: 3vh;
-    }
+  .partner-text h1 {
+    font-size: 4vh;
+    text-align: center;
+  }
+  .partner-text p {
+    font-size: 3vh;
+    margin-bottom: 0%;
+    padding: 0% 5% 0% 5%;
+  }
+  .client-text h1 {
+    font-size: 4vh;
+  }
+  .client-text p {
+    font-size: 3vh;
   }
 }
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .hidden-nav-contact {
     display: none !important;
   }
-
-  main {
-    h1 {
-      font-size: 3.5vh;
-    }
-
-    p {
-      font-size: 1.5vw;
-    }
+  main h1 {
+    font-size: 3.5vh;
   }
-
+  main p {
+    font-size: 1.5vw;
+  }
   .carousel-item img {
     width: 100%;
     max-width: 500px;
     height: auto;
   }
-
   .services-section {
     grid-template-columns: repeat(5, 20%);
     grid-template-rows: auto;
     padding: 2% 0% 2% 0%;
     column-gap: 0%;
   }
-
   .service-bi {
     display: grid !important;
-    grid-column: 5 / 5;
-    grid-row: 1 / 1;
-
-    img {
-      justify-self: center;
-    }
+    grid-column: 5/5;
+    grid-row: 1/1;
   }
-
+  .service-bi img {
+    justify-self: center;
+  }
   .card-img-top {
     justify-self: center;
   }
-
   /*CSS específico "Sobre nosotros"*/
-
   .about-us-clients-section {
     display: grid;
     grid-template-columns: 55% 15% 15% 15%;
     grid-template-rows: repeat(2, auto);
     padding: 2% 2% 2% 2%;
   }
-
   .client-img {
     justify-self: center;
     align-self: center;
-
-    img {
-      width: 100%;
-      height: 100%;
-      max-width: 100px;
-      max-height: 80px;
-    }
   }
-
+  .client-img img {
+    width: 100%;
+    height: 100%;
+    max-width: 100px;
+    max-height: 80px;
+  }
   .client-text {
-    grid-column: 1 / 1;
-    grid-row: 1 / span 2;
+    grid-column: 1/1;
+    grid-row: 1/span 2;
     padding-left: 5%;
   }
-
-  .client-img {
-    client-mac {
-      grid-column: 2 / 2;
-      grid-row: 1 / 1;
-    }
-
-    client-city {
-      grid-column: 3 / 3;
-      grid-row: 1 / 1;
-    }
-
-    client-pepsi {
-      grid-column: 4 / 4;
-      grid-row: 1 / 1;
-    }
-
-    client-wendys {
-      grid-column: 2 / 2;
-      grid-row: 2 / 2;
-    }
-
-    client-rabobank {
-      grid-column: 3 / 3;
-      grid-row: 2 / 2;
-    }
-
-    client-hsbc {
-      grid-column: 4 / 4;
-      grid-row: 2 / 2;
-    }
+  .client-img client-mac {
+    grid-column: 2/2;
+    grid-row: 1/1;
+  }
+  .client-img client-city {
+    grid-column: 3/3;
+    grid-row: 1/1;
+  }
+  .client-img client-pepsi {
+    grid-column: 4/4;
+    grid-row: 1/1;
+  }
+  .client-img client-wendys {
+    grid-column: 2/2;
+    grid-row: 2/2;
+  }
+  .client-img client-rabobank {
+    grid-column: 3/3;
+    grid-row: 2/2;
+  }
+  .client-img client-hsbc {
+    grid-column: 4/4;
+    grid-row: 2/2;
   }
 }
+
+/*# sourceMappingURL=styles.css.map */
