@@ -213,26 +213,28 @@ footer {
 
 .principal-presentation-about {
   display: flex;
-  flex-direction: row;
+  flex-direction: wrap;
   align-items: center;
-  background-color: $col-berkeley-blue;
+  background-color: $col-cerulean;
 }
 
 .principal-presentation-about-text {
+  flex: 1 0 50%;
   h1 {
     font-size: 5vh;
-    color: $col-non-photo-blue;
+    color: $col-berkeley-blue;
   }
 
   p {
     font-size: 3vh;
-    color: $col-non-photo-blue;
+    color: $col-berkeley-blue;
   }
 }
 
 .about-us-img {
+  flex: 1 0 50%;
   width: 100%;
-  max-width: 350px;
+  max-width: 500px;
   height: auto;
   padding-bottom: 5%;
 }
@@ -252,8 +254,6 @@ footer {
     height: auto;
   }
 }
-
-
 
 .partner-aws {
   grid-column: 1 / 1;
@@ -289,9 +289,14 @@ footer {
   grid-column: 4 / 4;
   grid-row: 1 / span 2;
 
-  h1,
+  h2 {
+    font-size: 4vh;
+    color: $col-berkeley-blue;
+    padding: 0% 5% 0% 5%;
+  }
   p {
     color: $col-berkeley-blue;
+    padding: 0% 5% 0% 5%;
   }
 }
 
@@ -300,14 +305,16 @@ footer {
   grid-template-columns: 55% 15% 15% 15%;
   padding: 2% 2% 2% 2%;
   font-family: $font-hand;
-  background-color: $col-berkeley-blue;
+  background-color: $col-cerulean;
 }
 
 .client-text {
-
-  h1,
+  h2 {
+    font-size: 4vh;
+    color: $col-berkeley-blue;
+  }
   p {
-    color: $col-non-photo-blue;
+    color: $col-berkeley-blue;
   }
 }
 
@@ -368,11 +375,15 @@ footer {
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: auto;
   gap: 1%;
+  h1, p {
+    color: $col-berkeley-blue;
+  }
 }
 
 .principal-presentation-contact-form label {
   margin: 1%;
   padding: 1% 0% 1% 0%;
+  color: $col-berkeley-blue;
 }
 
 .principal-contact-image {
@@ -420,6 +431,94 @@ footer {
 .contact-phone {
   grid-column: 3 / 3;
   grid-row: 3 / 3;
+}
+
+/* CSS Servicios */
+
+.principal-presentation-services {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: auto;
+  gap: 1%;
+  background-color: $col-berkeley-blue;
+  align-items: center;
+  h1, p {
+    color: $col-honeydew;
+  }
+  span {
+    color: $col-non-photo-blue;
+  }
+  img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  grid-template-rows: repeat(2,auto);
+  gap: 1%;
+  padding: 2% 0% 2% 0%;
+  align-items: center;
+  justify-content: center;
+  background-color: $col-cerulean;
+  img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+  }
+  h5, p {
+    font-family: $font-hand;
+    color: $col-berkeley-blue;
+  }
+}
+
+.card-services {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  align-self: center;
+  text-align: center;
+  justify-items: center;  
+  background-color: $col-non-photo-blue;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  gap:1%;
+  button {
+    font-family: $font-hand;
+  }
+}
+
+.services-consulting {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+}
+
+.services-cloud {
+  grid-column: 2 / 2;
+  grid-row: 1 / 1;
+}
+
+.services-security {
+  grid-column: 3 / 3;
+  grid-row: 1 / 1;
+}
+
+.services-automation {
+  grid-column: 1 / 1;
+  grid-row: 2 / 2;
+}
+
+.services-bi {
+  grid-column: 2 / 2;
+  grid-row: 2 / 2;
+}
+
+.services-support {
+  grid-column: 3 / 3;
+  grid-row: 2 / 2;
 }
 
 /* Extra small devices (phones, 575px and down) */
@@ -525,8 +624,15 @@ footer {
   }
 
   .about-us-img {
-    max-width: 150px;
+    width: 100%;
+    max-width: 220px;
+    height: auto;
     padding-bottom: 5%;
+    img {
+      width: 100%;
+      max-width: 220px;
+      height: auto;
+    }
   }
 
   .principal-presentation-about-text {
@@ -582,9 +688,8 @@ footer {
   }
 
   .partner-text {
-    h1 {
+    h2 {
       font-size: 3vh;
-      text-align: center;
     }
 
     p {
@@ -595,7 +700,7 @@ footer {
   }
 
   .client-text {
-    h1 {
+    h2 {
       font-size: 3vh;
     }
 
@@ -727,6 +832,17 @@ footer {
     flex-direction: column-reverse;
   }
 
+  .about-us-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+    }
+  }
+
   .about-us-clients-section {
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(4, 25%);
@@ -813,6 +929,17 @@ footer {
     flex-direction: row;
   }
 
+  .about-us-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+    }
+  }
+
   .principal-presentation-about-text {
     h1 {
       font-size: 3.5vh;
@@ -824,9 +951,8 @@ footer {
   }
 
   .partner-text {
-    h1 {
+    h2 {
       font-size: 3.5vh;
-      text-align: center;
     }
 
     p {
@@ -837,7 +963,7 @@ footer {
   }
 
   .client-text {
-    h1 {
+    h2 {
       font-size: 3.5vh;
     }
 
@@ -907,9 +1033,8 @@ footer {
   }
 
   .partner-text {
-    h1 {
+    h2 {
       font-size: 4vh;
-      text-align: center;
     }
 
     p {
@@ -920,7 +1045,7 @@ footer {
   }
 
   .client-text {
-    h1 {
+    h2 {
       font-size: 4vh;
     }
 
