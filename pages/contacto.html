@@ -22,7 +22,7 @@
     <!--bootsrap icos-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-    <title>Sobre Nosotros.</title>
+    <title>Contacto.</title>
 
 </head>
 
@@ -35,12 +35,14 @@
             <div class="container-fluid">
                 <div class="logo-img">
                     <a href="../index.html" class="navbar-brand">
-                        <img src="../images/logo_Berkeley_Blue.png" alt="Logo 'Collaboration IT' escrito a mano" class="logo">                
+                        <img src="../images/logo_Berkeley_Blue.png" alt="Logo 'Collaboration IT' escrito a mano"
+                            class="logo">
                     </a>
                 </div>
                 <div class="logo-img">
                     <a href="../index.html" class="navbar-brand">
-                        <img src="../images/logo_Cerulean.png" alt="Logo 'Collaboration IT' escrito a mano" class="logo">                
+                        <img src="../images/logo_Cerulean.png" alt="Logo 'Collaboration IT' escrito a mano"
+                            class="logo">
                     </a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -53,7 +55,7 @@
                             <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  active" aria-current="page" href="nosotros.html">Sobre nosotros</a>
+                            <a class="nav-link" href="nosotros.html">Sobre nosotros</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="servicios.html">Servicios</a>
@@ -62,7 +64,7 @@
                             <a class="nav-link" href="ofertas.html">Ofertas de trabajo</a>
                         </li>
                         <li class="nav-item hidden-nav-contact">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
+                            <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -76,69 +78,63 @@
 
     </header>
 
-    <main class="principal-presentation-about">
-        <section class="principal-presentation-about-text">
-
-            <h1>
-                Sobre Nosotros
-            </h1>
-            <p class="principal-presentation-about-text-p">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil excepturi ducimus voluptate velit
-                possimus quos exercitationem odio accusamus sint sit iure autem, consequatur itaque, eos modi explicabo
-                tempore nisi.
-            </p>
+    <main class="principal-presentation-contact">
+        <section class="principal-presentation-contact-form">
+            <h1>Contactanos</h1>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="formControlInputFullName">Nombre Completo</label>
+                    <input type="text" class="form-control" id="formControlInputFullName"
+                        placeholder="Nombre Apellido">
+                </div>
+                <div class="form-group">
+                    <label for="formControlInputEmail">Email</label>
+                    <input type="email" class="form-control" id="formControlInputEmail"
+                        placeholder="nombre@ejemplo.com">
+                </div>
+                <div class="form-group">
+                    <label for="formControlInputPhone">Teléfono</label>
+                    <input type="tel" class="form-control" id="formControlInputPhone"
+                        placeholder="+54 9 11 2233-8890">
+                </div>
+                <div class="form-group">
+                    <label for="formControlInputMotive">Seleccione un motivo</label>
+                    <select class="form-control form-select" id="formControlInputMotive">
+                        <option selected>haga click aqui.</option>
+                        <option>Servicios</option>
+                        <option>Presupuesto</option>
+                        <option>Consulta general</option>
+                        <option>Oferta de trabajo</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="formControlMessage">Escriba su consulta</label>
+                    <textarea class="form-control" id="formControlMessage" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="formControlFile">Adjuntar archivo</label>
+                    <input type="file" class="form-control-file" id="formControlFile">
+                </div>
+                <div class="form-group">
+                    <button type="submit" form="contact-form" class="form-button button-type-1" value="submit">Enviar</button>
+                </div>
+            </form>
         </section>
 
-        <section class="principal-about-us-image">
-            <img src="../images/about-img-00.png" class="about-us-img" alt=".">
+        <section class="principal-contact-image">
+            <img src="../images/contact-img.png" class="contact-img" alt=".">
+            <a href="mailto:pablo.guillermet@gmail.com">
+                <img src="../images/contact-mail.png" class="contact-mail contact-link" alt=".">
+            </a>
+            <a href="https://web.whatsapp.com">
+                <img src="../images/contact-chat.png" class="contact-chat contact-link" alt=".">
+            </a>
+            <a href="tel:555-666-7777">
+                <img src="../images/contact-phone.png" class="contact-phone contact-link" alt=".">
+            </a>         
         </section>
     </main>
-    <section class="about-us-partners-section">
-        <div class="partner-img partner-aws">
-            <img src="../images/partner_aws.png">
-        </div>
-        <div class="partner-img partner-google">
-            <img src="../images/partner_google.png">
-        </div>
-        <div class="partner-img partner-microsoft">
-            <img src="../images/partner_microsoft.png">
-        </div>
-        <div class="partner-img partner-vmware">
-            <img src="../images/partner_vmware.png">
-        </div>
-        <div class="partner-img partner-redhat">
-            <img src="../images/partner_redhat.png">
-        </div>
-        <div class="partner-img partner-servicenow">
-            <img src="../images/partner_servicenow.png">
-        </div>
-        <div class="partner-text">
-            <h2>
-                Nuestros Partners
-            </h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, sint. Blanditiis, officia porro
-                accusantium doloremque minus atque suscipit rem delectus voluptas totam itaque, facilis ex assumenda
-                commodi. Repellat, unde! Ipsum.
-            </p>
-        </div>
-    </section>
-    <section class="about-us-clients-section">
-        <div class="client-img client-mac"><img src="../images/client_mac.png"></div>
-        <div class="client-img client-city"><img src="../images/client_city.png"></div>
-        <div class="client-img client-pepsi"><img src="../images/client_pepsi.png"></div>
-        <div class="client-img client-wendys"><img src="../images/client_wendys.png"></div>
-        <div class="client-img client-rabobank"><img src="../images/client_rabobank.png"></div>
-        <div class="client-img client-hsbc"><img src="../images/client_hsbc.png"></div>
-        <div class="client-text">
-            <h2>Nuestros Clientes</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse animi odit quisquam quo a, corporis
-                itaque
-                autem fugiat voluptas nam alias placeat debitis rem assumenda! Maxime facilis vitae veritatis excepturi!
-            </p>
-        </div>
-    </section>
+
     <footer class="footer-about-us">
         <div class="socials-footer">
             <ul>
@@ -161,11 +157,11 @@
         </div>
         <div class="nav-footer navbar">
             <ul class="nav">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="../index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="nosotros.html">Sobre nosotros</a>
+                    <a class="nav-link" href="nosotros.html">Sobre nosotros</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="servicios.html">Servicios</a>
@@ -174,7 +170,7 @@
                     <a class="nav-link" href="ofertas.html">Ofertas de trabajo</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="contacto.html">Contacto</a>
+                    <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
                 </li>
             </ul>
         </div>
