@@ -1,8 +1,4 @@
 @charset "UTF-8";
-body {
-  font-family: "Gochi Hand", cursive;
-}
-
 header {
   display: flex;
   padding: 2% 10% 0% 10%;
@@ -61,6 +57,10 @@ header a:hover {
 
 .header-contact {
   text-align: -webkit-right;
+}
+
+body {
+  font-family: "Gochi Hand", cursive;
 }
 
 .button-type-1 {
@@ -401,6 +401,7 @@ footer p {
   gap: 1%;
   background-color: #1D3557;
   align-items: center;
+  justify-items: center;
 }
 .principal-presentation-services h1, .principal-presentation-services p {
   color: #F1FAEE;
@@ -410,8 +411,9 @@ footer p {
 }
 .principal-presentation-services img {
   width: 100%;
+  height: 100%;
   max-width: 600px;
-  height: auto;
+  max-height: 344px;
 }
 
 .services {
@@ -478,6 +480,74 @@ footer p {
 .services-support {
   grid-column: 3/3;
   grid-row: 2/2;
+}
+
+/* CSS Ofertas*/
+.principal-ofertas {
+  display: flex;
+  background-image: linear-gradient(to bottom right, #F1FAEE, #A8DADC, #457B9D, #1D3557);
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  color: #1D3557;
+}
+.principal-ofertas h1 {
+  font-size: 5vh;
+  margin: 1em auto;
+}
+.principal-ofertas img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  margin: auto;
+}
+
+.open-possitions {
+  display: flex;
+  flex-direction: column;
+  font-family: "Gochi Hand", cursive;
+  margin: 0% 3% 0% 3%;
+}
+
+.title-possitions {
+  align-self: center;
+  height: 80px;
+  padding-top: 20px;
+}
+.title-possitions h2 {
+  font-size: 4vh;
+  color: #1D3557;
+}
+
+.possitions {
+  display: flex;
+  flex-flow: wrap-reverse;
+  row-gap: 20px;
+}
+
+.l {
+  border-radius: 10px 0px 0px 10px;
+  flex: 70%;
+  height: 106px;
+  background-image: linear-gradient(to bottom left, #F1FAEE, #A8DADC);
+  color: #1D3557;
+}
+.l h3, .l p {
+  margin-left: 1%;
+}
+.l h3 {
+  font-size: 3.5vh;
+}
+
+.r {
+  flex: 30%;
+  height: 106px;
+  flex-basis: min-content;
+  background-image: linear-gradient(to bottom right, #F1FAEE, #A8DADC);
+  padding: 20px 0px 20px 30px;
+  border-radius: 0px 10px 10px 0px;
+  border-left: thick double #1D3557;
 }
 
 /* Extra small devices (phones, 575px and down) */
