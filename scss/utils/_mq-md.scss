@@ -1,0 +1,120 @@
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .navbar-toggler-icon {
+      width: 2em !important;
+      height: 2em !important;
+    }
+  
+    .header-contact {
+      display: none !important;
+    }
+  
+    main {
+      flex-direction: row;
+    }
+  
+    .principal-presentation {
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 50%;
+    }
+  
+    .carousel-container {
+      flex-direction: column;
+      flex-basis: 50%;
+      flex: 1;
+    }
+  
+    .services-section {
+      display: grid;
+      grid-template-columns: repeat(4, 20%);
+      grid-template-rows: auto;
+      padding: 1% 0% 1% 0%;
+      gap: 1%;
+    }
+  
+    .services-card {
+      max-width: 200px;
+    }
+  
+    .service-cloud {
+      grid-column: 1 / 1;
+      grid-row: 1 / 1;
+    }
+  
+    .service-security {
+      grid-column: 2 / 2;
+      grid-row: 1 / 1;
+    }
+  
+    .service-support {
+      display: grid !important;
+      grid-column: 3 / 3;
+      grid-row: 1 / 1;
+    }
+  
+    .service-automation {
+      display: grid !important;
+      grid-column: 4 / 4;
+      grid-row: 1 / 1;
+  
+      img {
+        justify-self: center;
+      }
+    }
+  
+    .service-bi {
+      display: none !important;
+    }
+  
+    /*CSS específico "Sobre nosotros"*/
+  
+    .principal-presentation-about {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .about-us-img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+  
+      img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+      }
+    }
+  
+    .principal-presentation-about-text {
+      h1 {
+        font-size: 3.5vh;
+      }
+  
+      p {
+        font-size: 2.5vh;
+      }
+    }
+  
+    .partner-text {
+      h2 {
+        font-size: 3.5vh;
+      }
+  
+      p {
+        font-size: 2.5vh;
+        margin-bottom: 0%;
+        padding: 0% 5% 0% 5%;
+      }
+    }
+  
+    .client-text {
+      h2 {
+        font-size: 3.5vh;
+      }
+  
+      p {
+        font-size: 2.5vh;
+      }
+    }
+  }

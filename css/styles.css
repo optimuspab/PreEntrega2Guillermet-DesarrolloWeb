@@ -1,485 +1,13 @@
 @charset "UTF-8";
-body {
-  font-family: "Gochi Hand", cursive;
+/* reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header {
-  display: flex;
-  padding: 2% 10% 0% 10%;
-  align-items: center;
-  justify-content: center;
-  font-family: "Gochi Hand", cursive;
-  background-color: #F1FAEE;
-}
-header a {
-  text-decoration: none;
-  color: #1D3557 !important;
-}
-header a:hover {
-  color: #457B9D !important;
-}
-
-.menu-desktop {
-  text-decoration: none;
-  flex-grow: 1;
-}
-.menu-desktop ul {
-  list-style-type: none;
-}
-.menu-desktop li {
-  float: left;
-  margin-right: 10px;
-  padding: 0 4px;
-}
-
-.logo {
-  width: 100%;
-  max-width: 250px;
-  height: auto;
-}
-
-.container-fluid .logo-img:nth-of-type(2) {
-  display: none;
-}
-.container-fluid:hover .logo-img:nth-of-type(1) {
-  display: none;
-}
-.container-fluid:hover .logo-img:nth-of-type(2) {
-  display: block;
-}
-
-.navbar-toggler {
-  border: none !important;
-}
-.navbar-toggler:hover {
-  border: none !important;
-}
-.navbar-toggler:focus {
-  border: none !important;
-  box-shadow: none !important;
-}
-
-.header-contact {
-  text-align: -webkit-right;
-}
-
-.button-type-1 {
-  border: none;
-  background: #E63946;
-  border-radius: 10px;
-  color: #F1FAEE;
-  cursor: pointer;
-  height: 40px;
-  width: 100px;
-}
-.button-type-1:hover {
-  background-color: #1D3557;
-}
-
-main {
-  display: flex;
-  padding: 2% 10% 2% 10%;
-  font-family: "Gochi Hand", cursive;
-}
-main p {
-  font-size: 2vw;
-  color: #457B9D;
-}
-
-.principal-presentation {
-  align-self: center;
-  padding-left: 10px;
-}
-.principal-presentation h1 {
-  font-size: 4vw;
-  color: #1D3557;
-}
-
-.carousel {
-  position: none;
-}
-
-.principal-image {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  align-self: center;
-}
-
-.carousel-item img {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  object-fit: contain;
-}
-
-.services-section {
-  display: flex;
-  flex-direction: row;
-  gap: 1%;
-  margin: 0% 2% 0% 2%;
-  justify-content: center;
-  background-color: #457B9D;
-  justify-items: center;
-  place-items: center;
-}
-
-.services-card {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  align-self: center;
-  font-family: "Gochi Hand", cursive;
-  text-align: center;
-  background-color: #F1FAEE;
-  border-radius: 10px;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
-  transition: all 0.3s;
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
-  transition-delay: 0s;
-  transition-property: all;
-  justify-items: center;
-}
-.services-card h5 {
-  color: #1D3557;
-}
-.services-card p {
-  color: #457B9D;
-}
-.services-card img {
-  width: 100%;
-  max-width: 150px;
-  height: auto;
-}
-
-.services-card-button {
-  margin: 0% 0% 2% 0%;
-}
-
-footer {
-  display: grid;
-  place-items: center;
-  font-family: "Gochi Hand", cursive;
-}
-footer ul {
-  margin: 0%;
-}
-footer li {
-  display: inline-flex;
-}
-footer li a {
-  padding-right: 10px;
-}
-footer p {
-  color: #1D3557;
-}
-
-.nav-footer a,
-.socials-footer a {
-  color: #1D3557;
-}
-
-.nav-footer a:hover,
-.socials-footer a:hover {
-  color: #457B9D;
-}
-
-/*CSS específico "Sobre nosotros"*/
-.principal-presentation-about {
-  display: flex;
-  flex-direction: wrap;
-  align-items: center;
-  background-color: #457B9D;
-}
-
-.principal-presentation-about-text {
-  flex: 1 0 50%;
-}
-.principal-presentation-about-text h1 {
-  font-size: 5vh;
-  color: #1D3557;
-}
-.principal-presentation-about-text p {
-  font-size: 3vh;
-  color: #1D3557;
-}
-
-.about-us-img {
-  flex: 1 0 50%;
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  padding-bottom: 5%;
-}
-
-.about-us-partners-section {
-  display: grid;
-  grid-template-columns: 15% 15% 15% 55%;
-  padding: 2% 2% 2% 2%;
-  font-family: "Gochi Hand", cursive;
-}
-
-.partner-img {
-  text-align: -webkit-center;
-}
-.partner-img img {
-  width: 100%;
-  max-width: 100px;
-  height: auto;
-}
-
-.partner-aws {
-  grid-column: 1/1;
-  grid-row: 1/1;
-}
-
-.partner-google {
-  grid-column: 2/2;
-  grid-row: 1/1;
-}
-
-.partner-microsoft {
-  grid-column: 3/3;
-  grid-row: 1/1;
-}
-
-.partner-redhat {
-  grid-column: 1/1;
-  grid-row: 2/2;
-}
-
-.partner-vmware {
-  grid-column: 2/2;
-  grid-row: 2/2;
-}
-
-.partner-servicenow {
-  grid-column: 3/3;
-  grid-row: 2/2;
-}
-
-.partner-text {
-  grid-column: 4/4;
-  grid-row: 1/span 2;
-}
-.partner-text h2 {
-  font-size: 4vh;
-  color: #1D3557;
-  padding: 0% 5% 0% 5%;
-}
-.partner-text p {
-  color: #1D3557;
-  padding: 0% 5% 0% 5%;
-}
-
-.about-us-clients-section {
-  display: grid;
-  grid-template-columns: 55% 15% 15% 15%;
-  padding: 2% 2% 2% 2%;
-  font-family: "Gochi Hand", cursive;
-  background-color: #457B9D;
-}
-
-.client-text h2 {
-  font-size: 4vh;
-  color: #1D3557;
-}
-.client-text p {
-  color: #1D3557;
-}
-
-.client-img {
-  justify-self: center;
-  align-self: center;
-}
-.client-img img {
-  width: 100%;
-  height: 100%;
-  max-width: 100px;
-  max-height: 80px;
-}
-
-.client-text {
-  grid-column: 1/1;
-  grid-row: 1/span 2;
-  padding-left: 5%;
-}
-
-.client-img client-mac {
-  grid-column: 2/2;
-  grid-row: 1/1;
-}
-.client-img client-city {
-  grid-column: 3/3;
-  grid-row: 1/1;
-}
-.client-img client-pepsi {
-  grid-column: 4/4;
-  grid-row: 1/1;
-}
-.client-img client-wendys {
-  grid-column: 2/2;
-  grid-row: 2/2;
-}
-.client-img client-rabobank {
-  grid-column: 3/3;
-  grid-row: 2/2;
-}
-.client-img client-hsbc {
-  grid-column: 4/4;
-  grid-row: 2/2;
-}
-
-/* CSS Contact */
-.principal-presentation-contact {
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  grid-template-rows: auto;
-  gap: 1%;
-}
-.principal-presentation-contact h1, .principal-presentation-contact p {
-  color: #1D3557;
-}
-
-.principal-presentation-contact-form label {
-  margin: 1%;
-  padding: 1% 0% 1% 0%;
-  color: #1D3557;
-}
-
-.principal-contact-image {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(3, auto);
-  gap: 0%;
-}
-.principal-contact-image a {
-  text-decoration: none;
-}
-
-.contact-img {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  grid-column: 1/span 3;
-  grid-row: 1/span 2;
-}
-
-.contact-link {
-  width: 100%;
-  max-width: 180px;
-  height: auto;
-  justify-self: flex-end;
-  transition: transform 250ms, opacity 400ms;
-}
-.contact-link:hover {
-  cursor: pointer;
-  transform: scale(1.2);
-}
-
-.contact-chat {
-  grid-column: 2/2;
-  grid-row: 3/3;
-}
-
-.contact-mail {
-  grid-column: 1/1;
-  grid-row: 3/3;
-}
-
-.contact-phone {
-  grid-column: 3/3;
-  grid-row: 3/3;
-}
-
-/* CSS Servicios */
-.principal-presentation-services {
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  grid-template-rows: auto;
-  gap: 1%;
-  background-color: #1D3557;
-  align-items: center;
-}
-.principal-presentation-services h1, .principal-presentation-services p {
-  color: #F1FAEE;
-}
-.principal-presentation-services span {
-  color: #A8DADC;
-}
-.principal-presentation-services img {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-}
-
-.services {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(2, auto);
-  gap: 1%;
-  padding: 2% 0% 2% 0%;
-  align-items: center;
-  justify-content: center;
-  background-color: #457B9D;
-}
-.services img {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
-}
-.services h5, .services p {
-  font-family: "Gochi Hand", cursive;
-  color: #1D3557;
-}
-
-.card-services {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  align-self: center;
-  text-align: center;
-  justify-items: center;
-  background-color: #A8DADC;
-  border-radius: 10px;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
-  gap: 1%;
-}
-.card-services button {
-  font-family: "Gochi Hand", cursive;
-}
-
-.services-consulting {
-  grid-column: 1/1;
-  grid-row: 1/1;
-}
-
-.services-cloud {
-  grid-column: 2/2;
-  grid-row: 1/1;
-}
-
-.services-security {
-  grid-column: 3/3;
-  grid-row: 1/1;
-}
-
-.services-automation {
-  grid-column: 1/1;
-  grid-row: 2/2;
-}
-
-.services-bi {
-  grid-column: 2/2;
-  grid-row: 2/2;
-}
-
-.services-support {
-  grid-column: 3/3;
-  grid-row: 2/2;
-}
-
+/*variables, mixin, mapas*/
+/*media queris*/
 /* Extra small devices (phones, 575px and down) */
 @media only screen and (max-width: 576px) {
   header {
@@ -666,6 +194,53 @@ footer p {
     padding-top: 2%;
   }
 }
+/* CSS Servicios */
+.principal-presentation-services {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.principal-presentation-services img {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  max-height: 206px;
+}
+
+.services-text,
+services-carousel {
+  margin: 2%;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.services img {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+}
+
+.card-services {
+  width: 50%;
+  height: 407px;
+  max-width: 200px;
+  margin-top: auto;
+}
+.card-services h2 {
+  font-size: 3vh;
+}
+.card-services p {
+  font-size: 2vh;
+}
+
+.services-card-button {
+  margin-bottom: 0%;
+}
+
 /* Small devices (portrait tablets and large phones, 576px and up) */
 @media only screen and (min-width: 576px) {
   .logo {
@@ -971,6 +546,570 @@ footer p {
     grid-column: 4/4;
     grid-row: 2/2;
   }
+}
+/*header y footer*/
+header {
+  display: flex;
+  padding: 2% 10% 0% 10%;
+  align-items: center;
+  justify-content: center;
+  font-family: "Gochi Hand", cursive;
+  background-color: #F1FAEE;
+}
+header a {
+  text-decoration: none;
+  color: #1D3557 !important;
+}
+header a:hover {
+  color: #457B9D !important;
+}
+
+.menu-desktop {
+  text-decoration: none;
+  flex-grow: 1;
+}
+.menu-desktop ul {
+  list-style-type: none;
+}
+.menu-desktop li {
+  float: left;
+  margin-right: 10px;
+  padding: 0 4px;
+}
+
+.logo {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+}
+
+.container-fluid .logo-img:nth-of-type(2) {
+  display: none;
+}
+.container-fluid:hover .logo-img:nth-of-type(1) {
+  display: none;
+}
+.container-fluid:hover .logo-img:nth-of-type(2) {
+  display: block;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+.navbar-toggler:hover {
+  border: none !important;
+}
+.navbar-toggler:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.header-contact {
+  text-align: -webkit-right;
+}
+
+footer {
+  display: grid;
+  place-items: center;
+  font-family: "Gochi Hand", cursive;
+}
+footer ul {
+  margin: 0%;
+}
+footer li {
+  display: inline-flex;
+}
+footer li a {
+  padding-right: 10px;
+}
+footer p {
+  color: #1D3557;
+}
+
+.nav-footer a,
+.socials-footer a {
+  color: #1D3557;
+}
+
+.nav-footer a:hover,
+.socials-footer a:hover {
+  color: #457B9D;
+}
+
+/*páginas*/
+/* css index */
+main {
+  display: flex;
+  padding: 2% 10% 2% 10%;
+  font-family: "Gochi Hand", cursive;
+  background-color: #1D3557;
+  margin: 0% 2% 0% 2%;
+}
+main p {
+  font-size: 2vw;
+  color: #457B9D;
+}
+
+.principal-presentation {
+  align-self: center;
+  padding-left: 10px;
+}
+.principal-presentation h1 {
+  font-size: 4vw;
+  color: #A8DADC;
+}
+
+.carousel {
+  position: none;
+}
+
+.principal-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  align-self: center;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  max-height: 327px;
+  max-width: 500px;
+  object-fit: contain;
+}
+
+.services-section {
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+  margin: 0% 2% 0% 2%;
+  justify-content: center;
+  background-color: #457B9D;
+  justify-items: center;
+  place-items: center;
+}
+
+.services-card {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  align-self: center;
+  font-family: "Gochi Hand", cursive;
+  text-align: center;
+  background-color: #F1FAEE;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  transition: all 0.3s;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-property: all;
+  justify-items: center;
+}
+.services-card h5 {
+  color: #1D3557;
+}
+.services-card p {
+  color: #457B9D;
+}
+.services-card img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+}
+
+.services-card-button {
+  margin: 0% 0% 2% 0%;
+}
+
+/*CSS específico "Sobre nosotros"*/
+.principal-presentation-about {
+  display: flex;
+  flex-direction: wrap;
+  align-items: center;
+  background-color: #457B9D;
+}
+
+.principal-presentation-about-text {
+  flex: 1 0 50%;
+}
+.principal-presentation-about-text h1 {
+  font-size: 5vh;
+  color: #1D3557;
+}
+.principal-presentation-about-text p {
+  font-size: 3vh;
+  color: #1D3557;
+}
+
+.about-us-img {
+  flex: 1 0 50%;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  padding-bottom: 5%;
+}
+
+.about-us-partners-section {
+  display: grid;
+  grid-template-columns: 15% 15% 15% 55%;
+  padding: 2% 2% 2% 2%;
+  font-family: "Gochi Hand", cursive;
+}
+
+.partner-img {
+  text-align: -webkit-center;
+}
+.partner-img img {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+}
+
+.partner-aws {
+  grid-column: 1/1;
+  grid-row: 1/1;
+}
+
+.partner-google {
+  grid-column: 2/2;
+  grid-row: 1/1;
+}
+
+.partner-microsoft {
+  grid-column: 3/3;
+  grid-row: 1/1;
+}
+
+.partner-redhat {
+  grid-column: 1/1;
+  grid-row: 2/2;
+}
+
+.partner-vmware {
+  grid-column: 2/2;
+  grid-row: 2/2;
+}
+
+.partner-servicenow {
+  grid-column: 3/3;
+  grid-row: 2/2;
+}
+
+.partner-text {
+  grid-column: 4/4;
+  grid-row: 1/span 2;
+}
+.partner-text h2 {
+  font-size: 4vh;
+  color: #1D3557;
+  padding: 0% 5% 0% 5%;
+}
+.partner-text p {
+  color: #1D3557;
+  padding: 0% 5% 0% 5%;
+}
+
+.about-us-clients-section {
+  display: grid;
+  grid-template-columns: 55% 15% 15% 15%;
+  padding: 2% 2% 2% 2%;
+  font-family: "Gochi Hand", cursive;
+  background-color: #457B9D;
+}
+
+.client-text h2 {
+  font-size: 4vh;
+  color: #1D3557;
+}
+.client-text p {
+  color: #1D3557;
+}
+
+.client-img {
+  justify-self: center;
+  align-self: center;
+}
+.client-img img {
+  width: 100%;
+  height: 100%;
+  max-width: 100px;
+  max-height: 80px;
+}
+
+.client-text {
+  grid-column: 1/1;
+  grid-row: 1/span 2;
+  padding-left: 5%;
+}
+
+.client-img client-mac {
+  grid-column: 2/2;
+  grid-row: 1/1;
+}
+.client-img client-city {
+  grid-column: 3/3;
+  grid-row: 1/1;
+}
+.client-img client-pepsi {
+  grid-column: 4/4;
+  grid-row: 1/1;
+}
+.client-img client-wendys {
+  grid-column: 2/2;
+  grid-row: 2/2;
+}
+.client-img client-rabobank {
+  grid-column: 3/3;
+  grid-row: 2/2;
+}
+.client-img client-hsbc {
+  grid-column: 4/4;
+  grid-row: 2/2;
+}
+
+/* CSS Servicios */
+.principal-presentation-services {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: auto;
+  gap: 1%;
+  background-color: #1D3557;
+  align-items: center;
+  justify-items: center;
+}
+.principal-presentation-services h1,
+.principal-presentation-services p {
+  color: #F1FAEE;
+}
+.principal-presentation-services span {
+  color: #A8DADC;
+}
+.principal-presentation-services img {
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
+  max-height: 344px;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+  gap: 1%;
+  padding: 2% 0% 2% 0%;
+  align-items: center;
+  justify-content: center;
+  background-color: #457B9D;
+}
+.services img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+.services h5,
+.services p {
+  font-family: "Gochi Hand", cursive;
+  color: #1D3557;
+}
+
+.card-services {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  align-self: center;
+  text-align: center;
+  justify-items: center;
+  background-color: #A8DADC;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  gap: 1%;
+}
+.card-services button {
+  font-family: "Gochi Hand", cursive;
+}
+
+.services-consulting {
+  grid-column: 1/1;
+  grid-row: 1/1;
+}
+
+.services-cloud {
+  grid-column: 2/2;
+  grid-row: 1/1;
+}
+
+.services-security {
+  grid-column: 3/3;
+  grid-row: 1/1;
+}
+
+.services-automation {
+  grid-column: 1/1;
+  grid-row: 2/2;
+}
+
+.services-bi {
+  grid-column: 2/2;
+  grid-row: 2/2;
+}
+
+.services-support {
+  grid-column: 3/3;
+  grid-row: 2/2;
+}
+
+/* CSS Ofertas*/
+.principal-ofertas {
+  display: flex;
+  background-color: #1D3557;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  color: #A8DADC;
+}
+.principal-ofertas h1 {
+  font-size: 5vh;
+  margin: 1em auto;
+}
+.principal-ofertas img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  margin: auto;
+}
+
+.open-possitions {
+  display: flex;
+  flex-direction: column;
+  font-family: "Gochi Hand", cursive;
+  margin: 0% 0% 0% 0%;
+  background-color: #457B9D;
+  padding: 2% 0% 2% 0%;
+}
+
+.title-possitions {
+  align-self: center;
+  height: 80px;
+  padding-top: 0%;
+}
+.title-possitions h2 {
+  font-size: 4vh;
+  color: #F1FAEE;
+}
+
+.possitions {
+  display: flex;
+  flex-flow: wrap-reverse;
+  row-gap: 20px;
+  margin: 0% 3% 0% 3%;
+}
+
+.l {
+  border-radius: 10px 0px 0px 10px;
+  flex: 70%;
+  height: 106px;
+  background-image: linear-gradient(to bottom left, #F1FAEE, #A8DADC);
+  color: #1D3557;
+}
+.l h3,
+.l p {
+  margin-left: 1%;
+}
+.l h3 {
+  font-size: 3.5vh;
+}
+
+.r {
+  flex: 30%;
+  height: 106px;
+  flex-basis: min-content;
+  background-image: linear-gradient(to bottom right, #F1FAEE, #A8DADC);
+  padding: 20px 0px 20px 30px;
+  border-radius: 0px 10px 10px 0px;
+  border-left: thick double #1D3557;
+}
+
+/* CSS Contact */
+.principal-presentation-contact {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: auto;
+  gap: 1%;
+}
+.principal-presentation-contact h1,
+.principal-presentation-contact p {
+  color: #1D3557;
+}
+
+.principal-presentation-contact-form label {
+  margin: 1%;
+  padding: 1% 0% 1% 0%;
+  color: #1D3557;
+}
+
+.principal-contact-image {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  gap: 0%;
+}
+.principal-contact-image a {
+  text-decoration: none;
+}
+
+.contact-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  grid-column: 1/span 3;
+  grid-row: 1/span 2;
+}
+
+.contact-link {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  justify-self: flex-end;
+  transition: transform 250ms, opacity 400ms;
+}
+.contact-link:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.contact-chat {
+  grid-column: 2/2;
+  grid-row: 3/3;
+}
+
+.contact-mail {
+  grid-column: 1/1;
+  grid-row: 3/3;
+}
+
+.contact-phone {
+  grid-column: 3/3;
+  grid-row: 3/3;
+}
+
+/*general*/
+body {
+  font-family: "Gochi Hand", cursive;
+}
+
+.button-type-1 {
+  border: none;
+  background: #E63946;
+  border-radius: 10px;
+  color: #F1FAEE;
+  height: 40px;
+  width: 100px;
+  cursor: pointer;
+}
+.button-type-1:hover {
+  background-color: #1D3557;
 }
 
 /*# sourceMappingURL=styles.css.map */

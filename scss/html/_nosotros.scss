@@ -1,0 +1,162 @@
+/*CSS específico "Sobre nosotros"*/
+
+.principal-presentation-about {
+    display: flex;
+    flex-direction: wrap;
+    align-items: center;
+    background-color: $col-cerulean;
+  }
+  
+  .principal-presentation-about-text {
+    flex: 1 0 50%;
+  
+    h1 {
+      font-size: 5vh;
+      color: $col-berkeley-blue;
+    }
+  
+    p {
+      font-size: 3vh;
+      color: $col-berkeley-blue;
+    }
+  }
+  
+  .about-us-img {
+    flex: 1 0 50%;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding-bottom: 5%;
+  }
+  
+  .about-us-partners-section {
+    display: grid;
+    grid-template-columns: 15% 15% 15% 55%;
+    padding: 2% 2% 2% 2%;
+    font-family: $font-hand;
+  }
+  
+  .partner-img {
+    text-align: -webkit-center;
+  
+    img {
+      width: 100%;
+      max-width: 100px;
+      height: auto;
+    }
+  }
+  
+  .partner-aws {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+  }
+  
+  .partner-google {
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+  }
+  
+  .partner-microsoft {
+    grid-column: 3 / 3;
+    grid-row: 1 / 1;
+  }
+  
+  .partner-redhat {
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+  }
+  
+  .partner-vmware {
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+  }
+  
+  .partner-servicenow {
+    grid-column: 3 / 3;
+    grid-row: 2 / 2;
+  }
+  
+  .partner-text {
+    grid-column: 4 / 4;
+    grid-row: 1 / span 2;
+  
+    h2 {
+      font-size: 4vh;
+      color: $col-berkeley-blue;
+      padding: 0% 5% 0% 5%;
+    }
+  
+    p {
+      color: $col-berkeley-blue;
+      padding: 0% 5% 0% 5%;
+    }
+  }
+  
+  .about-us-clients-section {
+    display: grid;
+    grid-template-columns: 55% 15% 15% 15%;
+    padding: 2% 2% 2% 2%;
+    font-family: $font-hand;
+    background-color: $col-cerulean;
+  }
+  
+  .client-text {
+    h2 {
+      font-size: 4vh;
+      color: $col-berkeley-blue;
+    }
+  
+    p {
+      color: $col-berkeley-blue;
+    }
+  }
+  
+  .client-img {
+    justify-self: center;
+    align-self: center;
+  
+    img {
+      width: 100%;
+      height: 100%;
+      max-width: 100px;
+      max-height: 80px;
+    }
+  }
+  
+  .client-text {
+    grid-column: 1 / 1;
+    grid-row: 1 / span 2;
+    padding-left: 5%;
+  }
+  
+  .client-img {
+    client-mac {
+      grid-column: 2 / 2;
+      grid-row: 1 / 1;
+    }
+  
+    client-city {
+      grid-column: 3 / 3;
+      grid-row: 1 / 1;
+    }
+  
+    client-pepsi {
+      grid-column: 4 / 4;
+      grid-row: 1 / 1;
+    }
+  
+    client-wendys {
+      grid-column: 2 / 2;
+      grid-row: 2 / 2;
+    }
+  
+    client-rabobank {
+      grid-column: 3 / 3;
+      grid-row: 2 / 2;
+    }
+  
+    client-hsbc {
+      grid-column: 4 / 4;
+      grid-row: 2 / 2;
+    }
+  }

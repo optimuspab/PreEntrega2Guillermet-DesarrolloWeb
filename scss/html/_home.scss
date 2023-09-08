@@ -1,0 +1,89 @@
+/* css index */
+
+main {
+    display: flex;
+    padding: 2% 10% 2% 10%;
+    font-family: $font-hand;
+    background-color: $col-berkeley-blue;
+    margin: 0% 2% 0% 2%;
+    p {
+      font-size: 2vw;
+      color: $col-cerulean;
+    }
+  }
+  
+  .principal-presentation {
+    align-self: center;
+    padding-left: 10px;
+  
+    h1 {
+      font-size: 4vw;
+      color: $col-non-photo-blue;
+    }
+  }
+  
+  .carousel {
+    position: none;
+  }
+  
+  .principal-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    align-self: center;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    max-height: 327px;
+    max-width: 500px;
+    object-fit: contain;
+  }
+  
+  .services-section {
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+    margin: 0% 2% 0% 2%;
+    justify-content: center;
+    background-color: $col-cerulean;
+    justify-items: center;
+    place-items: center;
+  }
+  
+  .services-card {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    align-self: center;
+    font-family: $font-hand;
+    text-align: center;
+    background-color: $col-honeydew;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+    transition: all .3s;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+    justify-items: center;
+  
+    h5 {
+      color: $col-berkeley-blue;
+    }
+  
+    p {
+      color: $col-cerulean;
+    }
+  
+    img {
+      width: 100%;
+      max-width: 150px;
+      height: auto;
+    }
+  }
+  
+  .services-card-button {
+    margin: 0% 0% 2% 0%;
+  }

@@ -1,0 +1,387 @@
+
+/* Extra small devices (phones, 575px and down) */
+@media only screen and (max-width: 576px) {
+  header {
+    display: flex;
+  }
+
+  .container-fluid {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+  }
+
+  .menu-desktop {
+    font-family: $font-hand;
+  }
+
+  .header-contact {
+    display: none;
+  }
+
+  .container-fluid a {
+    font-family: $font-hand;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+    font-family: $font-hand;
+  }
+
+  .carousel-item img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 5vh;
+  }
+
+  main p {
+    font-size: 3vw;
+  }
+
+  .services-section {
+    display: flex;
+    flex-direction: row;
+    padding: 2% 10% 2% 10%;
+    justify-content: space-around;
+  }
+
+  .service-support,
+  .service-automation,
+  .service-bi {
+    display: none !important;
+  }
+
+  .services-card {
+    max-width: 180px;
+    margin: 1%;
+
+    img {
+      max-width: 100px;
+    }
+
+    h5 {
+      font-size: 3vw;
+    }
+
+    p {
+      font-size: 2vw;
+    }
+
+    button {
+      border-radius: 30px;
+      font-size: 2.5vw;
+      max-height: 25px;
+      max-width: 80%;
+    }
+  }
+
+  footer {
+    padding: 3% 0% 0% 0%;
+  }
+
+  .nav-footer {
+    font-size: 2vw;
+  }
+
+  /*CSS específico "Sobre nosotros"*/
+
+  .principal-presentation-about {
+    flex-direction: column-reverse;
+  }
+
+  .about-us-img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    padding-bottom: 5%;
+
+    img {
+      width: 100%;
+      max-width: 220px;
+      height: auto;
+    }
+  }
+
+  .principal-presentation-about-text {
+    h1 {
+      font-size: 3vh;
+    }
+
+    p {
+      font-size: 2vh;
+    }
+  }
+
+  .about-us-partners-section {
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 0, 5fr 1fr 1fr 1fr;
+  }
+
+  .partner-img {
+    justify-self: center;
+    align-self: center;
+
+    img {
+      width: 100%;
+      max-width: 80px;
+      height: auto;
+    }
+  }
+
+  .partner-text {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    padding: 0% 2% 0% 2%;
+  }
+
+  .partner-aws {
+    grid-column: 1 / 1;
+    grid-row: 3 / 3;
+  }
+
+  .partner-google {
+    grid-column: 2 / 2;
+    grid-row: 3 / 3;
+  }
+
+  .partner-microsoft {
+    grid-column: 1 / 1;
+    grid-row: 4 / 4;
+  }
+
+  .partner-vmware {
+    grid-column: 2 / 2;
+    grid-row: 4 / 4;
+  }
+
+  .partner-text {
+    h2 {
+      font-size: 3vh;
+    }
+
+    p {
+      font-size: 2vh;
+      margin-bottom: 0%;
+      padding: 0% 5% 0% 5%;
+    }
+  }
+
+  .client-text {
+    h2 {
+      font-size: 3vh;
+    }
+
+    p {
+      font-size: 2vh;
+    }
+  }
+
+  .about-us-clients-section {
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(4, 25%);
+  }
+
+  .client-img img {
+    max-width: 60px;
+    max-height: 40px;
+  }
+
+  .client-text {
+    grid-column: 1 / 1;
+    grid-row: 1 / span 3;
+    padding: 0% 0% 0% 12%;
+  }
+
+  .client-img {
+    client-mac {
+      grid-column: 2 / 2;
+      grid-row: 1 / 1;
+    }
+
+    client-city {
+      grid-column: 2 / 2;
+      grid-row: 2 / 2;
+    }
+  }
+
+  .client-pepsi {
+    display: none;
+  }
+
+  .client-img {
+    client-wendys {
+      grid-column: 2 / 2;
+      grid-row: 3 / 3;
+    }
+
+    client-rabobank {
+      grid-column: 1 / 1;
+      grid-row: 4 / 4;
+    }
+
+    client-hsbc {
+      grid-column: 2 / 2;
+      grid-row: 4 / 4;
+    }
+  }
+
+  .footer-about-us {
+    padding-top: 2%;
+  }
+}
+
+/* CSS Servicios */
+
+.principal-presentation-services {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 206px;
+  }
+}
+
+.services-text,
+services-carousel {
+  margin: 2%;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+  }
+}
+
+.card-services {
+  width: 50%;
+  height: 407px;
+  max-width: 200px;
+  margin-top: auto;
+
+  h2 {
+    font-size: 3vh;
+  }
+
+  p {
+    font-size: 2vh;
+  }
+}
+
+.services-card-button {
+  margin-bottom: 0%;
+}
+
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+  .logo {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+  }
+
+  .navbar-toggler-icon {
+    width: 1.8em !important;
+    height: 1.8em !important;
+  }
+
+  .header-contact {
+    display: none !important;
+  }
+
+  main {
+    flex-direction: column-reverse;
+  }
+
+  .carousel-item img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .services-section {
+    display: flex;
+    flex-direction: row;
+    padding: 1% 2% 1% 2%;
+  }
+
+  .service-automation,
+  .service-bi {
+    display: none !important;
+  }
+
+  .services-card {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    margin: 1%;
+
+    img {
+      width: 100%;
+      max-width: 120px;
+      height: auto;
+    }
+  }
+
+  /*CSS específico "Sobre nosotros"*/
+
+  .principal-presentation-about-text,
+  .partner-text,
+  .client-text {
+    h1 {
+      font-size: 3vh;
+    }
+
+    p {
+      font-size: 2vh;
+    }
+  }
+
+  .principal-presentation-about {
+    flex-direction: column-reverse;
+  }
+
+  .about-us-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+
+    img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+    }
+  }
+
+  .about-us-clients-section {
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(4, 25%);
+  }
+
+  footer {
+    padding-top: 3%;
+  }
+}

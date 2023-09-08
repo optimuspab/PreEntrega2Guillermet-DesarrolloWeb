@@ -78,7 +78,7 @@
 
     </header>
     <main class="principal-presentation-services">
-        <section>
+        <section class="services-text">
             <h1>Nuestros Servicios de IT</h1>
             <p>Diseñamos soluciones a medida optimizando sus procesos y reduciendo costos. Somos especialistas en
                 soluciones informáticas para empresas. Nuestra propuesta incluye áreas tales como <span>Consultoría
@@ -88,8 +88,21 @@
                 <span>Soporte y Mesa de ayuda</span>, y más.
             </p>
         </section>
-        <section>
-            <img src="../images/services.png">
+        <section id="carousel-container" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner services-carousel">
+                <div class="carousel-item active">
+                    <img src="../images/services-00.png" class="d-block"
+                        alt=".">
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/services-01.png" class="d-block"
+                        alt=".">
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/services-02.png" class="d-block"
+                        alt=".">
+                </div>
+            </div>
         </section>
     </main>
     <section class="services">
@@ -105,10 +118,8 @@
         </div>
         <div class="card-services services-cloud">
             <img src="../images/services_cloud.png" alt="Dibujo de Monitor de PC dentro de una nube con conexiones.">
-            <h5>Servicios Cloud y Hosting</h5>
-            <p>Ofrecemos servicios de cloud hosting o alojamiento en la nube utiliza servidores virtuales para alojar
-                sitios web, servidores o servicios personalizables, para que tu empresa opere desde la nube con mayor
-                velocidad, manteniendo segura la información de tu organización.</p>
+            <h5>Cloud y Hosting</h5>
+            <p>Ofrecemos una variedad de servicios de alojamiento en la nube para satisfacer las necesidades de cualquier empresa. Nuestros servicios incluyen alojamiento web, alojamiento de servidores, alojamiento de aplicaciones y alojamiento de datos.</p>
             <button class="services-card-button button-type-1" onclick="location.href='pages/servicios.html'">Saber
                 más...</button>
         </div>
@@ -124,7 +135,7 @@
         <div class="card-services services-support">
             <img src="../images/services_support.png"
                 alt="Dibujo de Laptop con una persona ofreciendo ayuda dentro de la pantalla.">
-            <h5>Soporte y Mesa de ayuda</h5>
+            <h5>Mesa de ayuda</h5>
             <p>Ofrecemos servicio de Soporte «OnSite» o Remoto. Nuestro equipo de expertos está
                 disponible las 24hs para resolver cualquier incidente: Soporte técnico para hardware y
                 software, Instalación y configuración de equipos, Resolución de problemas de red, Capacitación al personal.
