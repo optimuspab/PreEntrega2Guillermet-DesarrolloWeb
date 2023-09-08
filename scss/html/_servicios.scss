@@ -1,0 +1,94 @@
+/* CSS Servicios */
+
+.principal-presentation-services {
+    @include grid-two-c;
+    background-color: $col-berkeley-blue;
+    align-items: center;
+    justify-items: center;
+  
+    h1,
+    p {
+      color: $col-honeydew;
+    }
+  
+    span {
+      color: $col-non-photo-blue;
+    }
+  
+    img {
+      width: 100%;
+      height: 100%;
+      max-width: 600px;
+      max-height: 344px;
+    }
+  }
+  
+  .services {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 1%;
+    padding: 2% 0% 2% 0%;
+    align-items: center;
+    justify-content: center;
+    background-color: $col-cerulean;
+  
+    img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+    }
+  
+    h5,
+    p {
+      font-family: $font-hand;
+      color: $col-berkeley-blue;
+    }
+  }
+  
+  .card-services {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    align-self: center;
+    text-align: center;
+    justify-items: center;
+    background-color: $col-non-photo-blue;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+    gap: 1%;
+  
+    button {
+      font-family: $font-hand;
+    }
+  }
+  
+  .services-consulting {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+  }
+  
+  .services-cloud {
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+  }
+  
+  .services-security {
+    grid-column: 3 / 3;
+    grid-row: 1 / 1;
+  }
+  
+  .services-automation {
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+  }
+  
+  .services-bi {
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+  }
+  
+  .services-support {
+    grid-column: 3 / 3;
+    grid-row: 2 / 2;
+  }

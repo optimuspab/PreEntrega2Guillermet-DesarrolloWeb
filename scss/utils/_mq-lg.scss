@@ -1,0 +1,184 @@
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    header {
+      display: flex;
+    }
+  
+    .header-contact {
+      display: flex !important;
+    }
+  
+    .hidden-nav-contact {
+      display: none !important;
+    }
+  
+    .principal-presentation {
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 50%;
+    }
+  
+    .carousel-item img {
+      width: 100%;
+      max-width: 450px;
+      height: auto;
+    }
+  
+    .carousel-container {
+      flex-direction: column;
+      flex-basis: 50%;
+      flex: 1;
+    }
+  
+    .service-automation {
+      display: grid !important;
+    }
+  
+    .service-bi {
+      display: none !important;
+    }
+  
+    .services-section {
+      display: grid;
+      grid-template-columns: repeat(4, 20%);
+      grid-template-rows: auto;
+      margin: 0%;
+    }
+  
+    /*CSS específico "Sobre nosotros"*/
+  
+    .principal-presentation-about-text {
+      h1 {
+        font-size: 4vh;
+      }
+  
+      p {
+        font-size: 3vh;
+      }
+    }
+  
+    .partner-text {
+      h2 {
+        font-size: 4vh;
+      }
+  
+      p {
+        font-size: 3vh;
+        margin-bottom: 0%;
+        padding: 0% 5% 0% 5%;
+      }
+    }
+  
+    .client-text {
+      h2 {
+        font-size: 4vh;
+      }
+  
+      p {
+        font-size: 3vh;
+      }
+    }
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .hidden-nav-contact {
+      display: none !important;
+    }
+  
+    main {
+      h1 {
+        font-size: 3.5vh;
+      }
+  
+      p {
+        font-size: 1.5vw;
+      }
+    }
+  
+    .carousel-item img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+    }
+  
+    .services-section {
+      grid-template-columns: repeat(5, 20%);
+      grid-template-rows: auto;
+      padding: 2% 0% 2% 0%;
+      column-gap: 0%;
+    }
+  
+    .service-bi {
+      display: grid !important;
+      grid-column: 5 / 5;
+      grid-row: 1 / 1;
+  
+      img {
+        justify-self: center;
+      }
+    }
+  
+    .card-img-top {
+      justify-self: center;
+    }
+  
+    /*CSS específico "Sobre nosotros"*/
+  
+    .about-us-clients-section {
+      display: grid;
+      grid-template-columns: 55% 15% 15% 15%;
+      grid-template-rows: repeat(2, auto);
+      padding: 2% 2% 2% 2%;
+    }
+  
+    .client-img {
+      justify-self: center;
+      align-self: center;
+  
+      img {
+        width: 100%;
+        height: 100%;
+        max-width: 100px;
+        max-height: 80px;
+      }
+    }
+  
+    .client-text {
+      grid-column: 1 / 1;
+      grid-row: 1 / span 2;
+      padding-left: 5%;
+    }
+  
+    .client-img {
+      client-mac {
+        grid-column: 2 / 2;
+        grid-row: 1 / 1;
+      }
+  
+      client-city {
+        grid-column: 3 / 3;
+        grid-row: 1 / 1;
+      }
+  
+      client-pepsi {
+        grid-column: 4 / 4;
+        grid-row: 1 / 1;
+      }
+  
+      client-wendys {
+        grid-column: 2 / 2;
+        grid-row: 2 / 2;
+      }
+  
+      client-rabobank {
+        grid-column: 3 / 3;
+        grid-row: 2 / 2;
+      }
+  
+      client-hsbc {
+        grid-column: 4 / 4;
+        grid-row: 2 / 2;
+      }
+    }
+  }
