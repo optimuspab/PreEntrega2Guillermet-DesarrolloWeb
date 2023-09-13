@@ -78,6 +78,44 @@
         font-size: 3vh;
       }
     }
+
+    .client-text {
+      grid-column: 1 / 1;
+      grid-row: 1 / span 2;
+      padding-left: 5%;
+    }
+  
+    .client-img {
+      client-mac {
+        grid-column: 2 / 2;
+        grid-row: 1 / span 2;
+      }
+  
+      client-city {
+        grid-column: 3 / 3;
+        grid-row: 1 / span 2;
+      }
+  
+      client-pepsi {
+        grid-column: 4 / 4;
+        grid-row: 1 / span 2;
+      }
+  
+      client-wendys {
+        grid-column: 2 / 2;
+        grid-row: 3 / span 4;
+      }
+  
+      client-rabobank {
+        grid-column: 3 / 3;
+        grid-row: 3 / span 4;
+      }
+  
+      client-hsbc {
+        grid-column: 4 / 4;
+        grid-row: 3 / span 4;
+      }
+    }
   }
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */

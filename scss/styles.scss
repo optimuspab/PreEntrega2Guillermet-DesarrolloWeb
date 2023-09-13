@@ -1,22 +1,22 @@
 /* reset*/
-@import "utils/_reset.scss";
+@import "utils/reset";
 /*variables, mixin, mapas*/
-@import "utils/_variables.scss";
-@import "utils/_mixin.scss";
-@import "utils/_mapas.scss";
+@import "utils/variables";
+@import "utils/mixin";
+@import "utils/mapas";
 /*media queris*/
-@import "utils/_mq-sm.scss";
-@import "utils/_mq-md.scss";
-@import "utils/_mq-lg.scss";
+@import "utils/mq-sm";
+@import "utils/mq-md";
+@import "utils/mq-lg";
 /*header y footer*/
-@import "layout/_header.scss";
-@import "layout/_footer.scss";
+@import "layout/header";
+@import "layout/footer";
 /*páginas*/
-@import "html/_home.scss";
-@import "html/_nosotros.scss";
-@import "html/_servicios.scss";
-@import "html/_ofertas.scss";
-@import "html/_contacto.scss";
+@import "html/home";
+@import "html/nosotros";
+@import "html/servicios";
+@import "html/ofertas";
+@import "html/contacto";
 /*general*/
 body {
   font-family: $font-hand;

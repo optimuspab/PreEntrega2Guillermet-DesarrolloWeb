@@ -11,6 +11,9 @@
   
     main {
       flex-direction: row;
+      h1 {
+        text-align-last: start;
+      }
     }
   
     .principal-presentation {
@@ -25,6 +28,12 @@
       flex: 1;
     }
   
+    .carousel-item {
+      text-align: -webkit-center;
+      img {
+        max-height: 262px !important;
+      }
+    }
     .services-section {
       display: grid;
       grid-template-columns: repeat(4, 20%);
