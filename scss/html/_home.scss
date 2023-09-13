@@ -53,12 +53,15 @@ main {
   }
   
   .services-card {
+    display: grid;
     width: 100%;
     max-width: 300px;
-    height: auto;
+    height: 350px;
     align-self: center;
-    font-family: $font-hand;
+    align-content: space-between;
+    justify-items: center;
     text-align: center;
+    font-family: $font-hand;
     background-color: $col-honeydew;
     border-radius: 10px;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
@@ -67,7 +70,6 @@ main {
     transition-timing-function: ease;
     transition-delay: 0s;
     transition-property: all;
-    justify-items: center;
   
     h5 {
       color: $col-berkeley-blue;
